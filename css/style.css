@@ -161,7 +161,7 @@ nav {
 }
 .line{
 	fill: var(--royal-blue);
-	transition: 0.35s ease;
+	transition: 0.35s ease-in-out;
 	transform-origin: center;
 }
 .nav-toggle.active .line1{
@@ -171,7 +171,7 @@ nav {
 		transform: translateX(-100%);
 }
 .nav-toggle.active .line3{
-	transform: translateY(-16px) rotate(-45deg);
+	transform: translateY(-22px) rotate(-45deg);
 }
 
 @media screen and (max-width: 1110px) {
