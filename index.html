@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Fin Pocket</title>
-		<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -100,9 +100,12 @@
 										</svg>
 									</button>
 								</li>
-								<li><button class="btn btn-primary">Login</button></li>
 							</ul>
 						</div>
+
+						<div class="nav-right">
+						<button class="btn btn-primary btn-login">Login</button>
+
 						<div class="nav-toggle">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
 								<path
@@ -110,20 +113,20 @@
 								/>
 							</svg>
 						</div>
+						</div>
 					</nav>
 				</div>
 			</div>
 		</header>
 
+		<script>
+			const navToggle = document.querySelector('.nav-toggle');
+			const navCollapsed = document.querySelector('.nav-collapsed');
 
-        <script>
-            const navToggle = document.querySelector('.nav-toggle');
-            const navCollapsed = document.querySelector('.nav-collapsed');
-
-            navToggle.addEventListener('click', () => {
-                navCollapsed.classList.toggle('show');
-                navToggle.classList.toggle('active');
-            })
-        </script>
+			navToggle.addEventListener('click', () => {
+				navCollapsed.classList.toggle('show');
+				navToggle.classList.toggle('active');
+			});
+		</script>
 	</body>
 </html>

@@ -16,7 +16,7 @@
 body{
 	font-family: 'stolzl';
 }
-ul {
+ul, ol, li {
 	list-style: none;
 }
 a {
@@ -114,9 +114,7 @@ nav {
 .nav-actions li {
 	margin-right: 20px;
 }
-.nav-actions li:last-child {
-	margin-right: 0;
-}
+
 .nav-actions-svg path {
 	transition: fill 0.3s ease-in-out;
 }
@@ -143,11 +141,18 @@ nav {
     cursor: pointer;
 }
 .nav-toggle svg{
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     fill: var(--royal-blue);
 }
-
+.nav-right{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-right .btn{
+	margin-right: 8px;
+}
 
 
 @media screen and (max-width: 1110px) {
