@@ -119,6 +119,24 @@
 			</div>
 		</header>
 
+		<main>
+			<section class="banner">
+				<div class="container">
+					<div class="banner-content">
+						<h1>Take Control of Your Money With Smarter Budgeting</h1>
+						<p>A simple, secure, and effective financial management system designed for everyday users.</p>
+						<div class="banner-btn">
+							<a href="" class="btn btn-primary">Get Started</a>
+							<a href="" class="btn btn-secondary">Sign Up</a>
+						</div>
+					</div>
+					<!-- <div class="banner-image">
+						<figure><img src="./assets/banner/banner-image.png" alt="lady-with-"></figure>
+					</div> -->
+				</div>
+			</section>
+		</main>
+
 		<script>
 			const navToggle = document.querySelector('.nav-toggle');
 			const navCollapsed = document.querySelector('.nav-collapsed');
@@ -127,6 +145,13 @@
 				navCollapsed.classList.toggle('show');
 				navToggle.classList.toggle('active');
 			});
+		</script>
+
+		<script>
+			const navbar = document.querySelector('header');
+			const navbarHeight = navbar.offsetHeight;
+			console.log(navbarHeight);
+
 		</script>
 	</body>
 </html>

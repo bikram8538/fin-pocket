@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* font-family: "DM Sans", sans-serif; */
 @font-face {
 	font-family: 'stolzl';
 	src: url('../assets/fonts/stolzl/stolzl_regular.otf');
@@ -15,6 +18,9 @@
 }
 body {
 	font-family: 'stolzl';
+}
+section {
+	padding: 100px 0;
 }
 ul,
 ol,
@@ -173,6 +179,60 @@ nav {
 .nav-toggle.active .line3 {
 	transform: translateY(-22px) rotate(-45deg);
 }
+/* ============= Navbar End ============= */
+
+/* ============= Banner Start ============= */
+
+.banner {
+	min-height: 90vh;
+	padding: 100px 0;
+	background: url('../assets/banner/banner-image.png'),
+		linear-gradient(to top left, rgba(130, 17, 255, 0.5), rgb(0, 47, 255, 0.5));
+	background-repeat: no-repeat;
+	background-position: right top;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner .container {
+	display: flex;
+	align-items: center;
+}
+.banner-content {
+	max-width: 700px;
+	width: 100%;
+	color: var(--white);
+}
+h1 {
+	font-size: 50px;
+	letter-spacing: -1.5px;
+	margin-bottom: 50px;
+}
+.banner-content p {
+	font-family: 'DM Sans', sans-serif;
+	font-size: 18px;
+	max-width: 550px;
+	width: 100%;
+}
+.banner-btn {
+	display: flex;
+	align-items: center;
+	margin-top: 80px;
+}
+.banner-btn .btn-primary {
+	margin-right: 50px;
+}
+
+.btn-secondary {
+	color: var(--white);
+	border: 1px solid var(--white);
+}
+
+.btn-secondary:hover {
+	background: var(--white);
+	color: var(--black);
+}
+/* ============= Banner End ============= */
 
 @media screen and (max-width: 1110px) {
 	.nav-toggle {
@@ -184,8 +244,11 @@ nav {
 		top: 100%;
 		left: 0;
 		right: 0;
-		width: 100%;
+		width: 100vw;
+		margin-left: calc(50% - 50vw);
 		flex-direction: column-reverse;
+		z-index: 99;
+		background: rgba(255, 255, 255, 1);
 	}
 	.nav-list {
 		margin-right: 0;
@@ -202,11 +265,18 @@ nav {
 		flex-direction: column;
 		border-radius: 10px;
 		width: 100%;
+		border-radius: 0;
+		border: none;
 	}
 	.nav-actions-svg {
 		width: 20px;
 	}
 	.nav-collapsed.show {
 		display: flex;
+	}
+	.banner {
+		background-position: center top;
+		backdrop-filter: blur(20px);
+		color: var(--black);
 	}
 }
