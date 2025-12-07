@@ -155,7 +155,7 @@ nav {
         display: block;
     }
     .nav-collapsed{
-        /* display: none; */
+        display: none;
         position: absolute;
         top: 100%;
         left: 0;
@@ -175,5 +175,8 @@ nav {
     .nav-actions-svg{
         width: 20px;
     }
+	.nav-collapsed.show{
+		display: flex;
+	}
 
 }
