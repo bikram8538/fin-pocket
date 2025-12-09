@@ -1,14 +1,15 @@
-
 /* ===========================
     DESIGN TOKENS
 =========================== */
 :root {
 	/* COLORS */
-	--clr-primary-300: #6dddff; /* sky blue */
+	--clr-primary-300: #6dddff;
 	--clr-primary-400: #4cc7ff;
-	--clr-primary-500: #002fff; /* deep royal */
+	--clr-primary-500: #002fff;
 	--clr-neutral-100: #ffffff;
 	--clr-neutral-900: #000000;
+
+	--clr-fade-200: rgba(0, 0, 0, 0.2);
 
 	/* FONT FAMILY */
 	--ff-stolzl: 'stolzl', sans-serif;
@@ -20,62 +21,137 @@
 	--fw-semibold: 600;
 	--fw-bold: 700;
 
-	/* FONT SIZE SCALE */
-	--fs-200: 0.75rem;
-	--fs-300: 0.9rem;
-	--fs-400: 1rem; /* base body */
-	--fs-500: 1.25rem;
-	--fs-600: 1.5rem;
-	--fs-700: 2rem;
-	--fs-800: 3rem;
-	--fs-900: 3.5rem; /* hero heading */
+	/* FONT SIZE (px) */
+	--fs-200: 12px;
+	--fs-300: 14.4px;
+	--fs-400: 16px;
+	--fs-500: 18px;
+	--fs-550: 20px;
+	--fs-600: 24px;
+	--fs-700: 32px;
+	--fs-800: 45px; /* h2 */
+	--fs-900: 56px; /* h1 */
 
-	--fs-200: 12px; /* 0.75rem  */
-	--fs-300: 14.4px; /* 0.9rem   */
-	--fs-400: 16px; /* 1rem     */
-	--fs-500: 20px; /* 1.25rem  */
-	--fs-600: 24px; /* 1.5rem   */
-	--fs-700: 32px; /* 2rem     */
-	--fs-800: 45px; /* 3rem   h2  */
-	--fs-900: 56px; /* 3.5rem  h1 */
+	/* LETTER SPACING */
+	--ls-500: -1.5px; /* h1 */
+	--ls-400: -1.4px; /* h2 */
 
-	--ls-500: -1.5px	/* h1 */
-	--ls-400: -1.4px	/* h2 */
+	/* GRID SYSTEM */
+	--one-col: calc(100% / 12);
+}
 
+/* === GRID CLASSES === */
+.col-1 {
+	width: calc(var(--one-col) * 1);
+}
+.col-2 {
+	width: calc(var(--one-col) * 2);
+}
+.col-3 {
+	width: calc(var(--one-col) * 3);
+}
+.col-4 {
+	width: calc(var(--one-col) * 4);
+}
+.col-5 {
+	width: calc(var(--one-col) * 5);
+}
+.col-6 {
+	width: calc(var(--one-col) * 6);
+}
+.col-7 {
+	width: calc(var(--one-col) * 7);
+}
+.col-8 {
+	width: calc(var(--one-col) * 8);
+}
+.col-9 {
+	width: calc(var(--one-col) * 9);
+}
+.col-10 {
+	width: calc(var(--one-col) * 10);
+}
+.col-11 {
+	width: calc(var(--one-col) * 11);
+}
+.col-12 {
+	width: calc(var(--one-col) * 12);
 }
 
 /* ===========================
 	CLIENT SWIPER
 =========================== */
-section.clients{
+
+section.clients {
 	padding: 24px 0;
 }
 .clients-swiper {
 	width: 100%;
 	overflow: hidden;
-	margin-top: 48px;
 }
+
 .clients-wrapper {
 	width: 100%;
 	display: flex;
 	transition-timing-function: linear !important;
 }
+
 .client-slide {
 	width: auto;
 	display: flex;
 	align-items: center;
 	padding: 0 12px;
 }
+
 .clients-img img {
 	height: 40px;
 	width: auto;
 }
 
-h2 {
+/* ==== SECTION CONTENT ====== */
+
+.sec-sub-heading {
+	font-family: var(--ff-stolzl);
+	font-size: var(--fs-500);
+	font-weight: var(--fw-regular);
+	margin: 0 auto;
+	width: max-content;
+	padding: 15px 20px;
+	border-radius: 50px;
+	border: 1px solid var(--clr-fade-200);
+	margin-bottom: 48px;
+}
+
+.sec-heading {
 	font-family: var(--ff-stolzl);
 	font-size: var(--fs-800);
+	letter-spacing: var(--ls-400);
 	text-align: center;
+	margin-bottom: 48px;
 }
-h2 span{
+
+.sec-heading span {
 	color: var(--clr-primary-500);
 }
+
+.sec-description {
+	text-align: center;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+/* ===============
+	Features
+ =============== */
+
+ .left-row .top-left span{
+	font-family: var(--ff-dm-sans);
+	color: var(--clr-neutral-900);
+	display: block;
+ }
+ .left-row .top-left span:first-child{
+	font-size: var(--fs-500);
+ }
+ .left-row .top-left span:last-child{
+	font-size: var(--fs-550);
+ }
