@@ -48,14 +48,7 @@ h1 {
 .banner-btn .btn-primary {
 	margin-right: 50px;
 }
-.btn-secondary {
-	color: var(--clr-neutral-100);
-	border: 1px solid var(--clr-neutral-100);
-}
-.btn-secondary:hover {
-	background: var(--clr-neutral-100);
-	color: var(--clr-neutral-900);
-}
+
 
 .banner-glow,
 .banner-grid {

@@ -66,22 +66,6 @@ nav {
 	fill: var(--clr-primary-500);
 }
 
-.btn {
-	padding: 10px 18px;
-	border-radius: 50px;
-	border: 1px solid transparent;
-	font-size: var(--fs-400);
-	font-weight: var(--fw-medium);
-	transition: all 0.3s ease-in;
-}
-.btn-primary {
-	background: var(--clr-primary-300);
-	color: var(--clr-neutral-900);
-}
-.btn-primary:hover {
-	background: var(--clr-primary-500);
-	color: var(--clr-neutral-100);
-}
 
 .nav-toggle {
 	display: none;

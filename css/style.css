@@ -26,7 +26,7 @@
 	--fs-300: 14.4px;
 	--fs-400: 16px;
 	--fs-500: 18px;
-	--fs-550: 20px;
+	--fs-550: 20px;	/* h3 */
 	--fs-600: 24px;
 	--fs-700: 32px;
 	--fs-800: 45px; /* h2 */
@@ -144,14 +144,44 @@ section.clients {
 	Features
  =============== */
 
- .left-row .top-left span{
+h3 {
 	font-family: var(--ff-dm-sans);
 	color: var(--clr-neutral-900);
-	display: block;
- }
- .left-row .top-left span:first-child{
-	font-size: var(--fs-500);
- }
- .left-row .top-left span:last-child{
 	font-size: var(--fs-550);
- }
+	font-weight: var(--fw-medium);
+}
+.feature-description{
+	font-size: var(--fs-500);
+	font-family: var(--ff-dm-sans);
+	color: var(--clr-neutral-900);
+	font-weight: var(--fw-regular);
+}
+
+.left-row .top {
+	display: flex;
+	justify-content: space-between;
+}
+.left-row .top , .left-row .mid, .left-row .bottom{
+	padding: 36px 18px;
+	border-radius: 22px;
+	border: 1px solid var(--clr-fade-200);
+	margin: 16px;
+
+}
+.left-row .mid h3, .left-row .bottom h3{
+	margin-top: 32px;
+	text-align: center;
+}
+
+.left-row .bottom figure{
+	background-color: var(--clr-primary-500);
+	padding: 19px;
+	border-radius: 50%;
+	width: max-content;
+	margin:0 auto;
+}
+.left-row .bottom .feature-description{
+	text-align: center;
+	margin-top: 32px;
+	opacity: 0.6;
+}
