@@ -1,0 +1,83 @@
+
+/* ===========================
+	BANNER
+=========================== */
+
+.banner {
+	min-height: 90vh;
+	padding: 100px 0;
+	background:
+	/* url('../assets/banner/portrait-smiling-happy-man-holding.png'), */
+		linear-gradient(to top right, #8211ff 52%, var(--clr-primary-500) 99%);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-clip: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.banner .container {
+	display: flex;
+	align-items: center;
+}
+.banner-content {
+	/* position: relative; */
+	max-width: 700px;
+	width: 100%;
+	color: var(--clr-neutral-100);
+	z-index: 5;
+}
+h1 {
+	font-size: var(--fs-900);
+	font-weight: var(--fw-bold);
+	letter-spacing: var(--ls-500);
+	margin-bottom: 50px;
+}
+.banner-content p {
+	font-family: var(--ff-dm-sans);
+	font-size: var(--fs-400);
+	font-weight: var(--fw-regular);
+	max-width: 550px;
+}
+.banner-btn {
+	display: flex;
+	align-items: center;
+	margin-top: 80px;
+}
+.banner-btn .btn-primary {
+	margin-right: 50px;
+}
+.btn-secondary {
+	color: var(--clr-neutral-100);
+	border: 1px solid var(--clr-neutral-100);
+}
+.btn-secondary:hover {
+	background: var(--clr-neutral-100);
+	color: var(--clr-neutral-900);
+}
+
+.banner-glow,
+.banner-grid {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+.banner-glow {
+	z-index: 3;
+	opacity: 0.8;
+}
+.banner-grid {
+	z-index: 4;
+}
+.banner-image{
+	height: 90%;
+	position: absolute;
+	margin-left: auto;
+	bottom: 0;
+	right: 0;
+}
