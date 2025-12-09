@@ -1,7 +1,7 @@
-.b{
+.b {
 	border: 1px solid black;
 }
-.c{
+.c {
 	background-color: red;
 }
 
@@ -10,14 +10,25 @@
 =========================== */
 :root {
 	/* COLORS */
+	--clr-neutral-100: #ffffff;
 	--clr-primary-300: #6dddff;
 	--clr-primary-400: #4cc7ff;
 	--clr-primary-500: #002fff;
-	--clr-primary-600: #2DA94F;
-	--clr-neutral-100: #ffffff;
+	--clr-primary-600: #2da94f;
 	--clr-neutral-900: #000000;
 
+	--clr-green-300: #b7ffcb; /* light green */
+	--clr-green-900: #005016; /* deep green */
+
+	--clr-red-500: #ff0303; /* strong red */
+	--clr-red-300: #ffb4aa; /* soft faded red */
+	--clr-red-200: #ffbcbd; /* soft pinkish red */
+	--clr-blue-300: #708afe; /* soft blue */
+
+	--clr-yellow-300: #fade8b; /* pastel yellow */
+
 	--clr-fade-200: rgba(0, 0, 0, 0.2);
+	--clr-fade-600: rgba(0, 0, 0, 0.6);
 
 	/* FONT FAMILY */
 	--ff-stolzl: 'stolzl', sans-serif;
@@ -34,8 +45,9 @@
 	--fs-300: 14.4px;
 	--fs-400: 16px;
 	--fs-500: 18px;
-	--fs-550: 20px;	/* h3 */
+	--fs-550: 20px; /* h3 */
 	--fs-600: 24px;
+	--fs-650: 30px;
 	--fs-700: 32px;
 	--fs-800: 45px; /* h2 */
 	--fs-900: 56px; /* h1 */
@@ -158,7 +170,7 @@ h3 {
 	font-size: var(--fs-550);
 	font-weight: var(--fw-medium);
 }
-.feature-description{
+.feature-description {
 	font-size: var(--fs-500);
 	font-family: var(--ff-dm-sans);
 	color: var(--clr-neutral-900);
@@ -171,29 +183,33 @@ h3 {
 	display: flex;
 	justify-content: space-between;
 }
-.left-row .top , .left-row .mid, .left-row .bottom, .mid-main-wrapper, .savings-wrapper{
+.left-row .top,
+.left-row .mid,
+.left-row .bottom,
+.mid-main-wrapper,
+.savings-wrapper {
 	padding: 18px;
 	border-radius: 22px;
 	border: 1px solid var(--clr-fade-200);
-	margin: 16px;
-
+	margin: 8px;
 }
-.left-row .mid h3, .left-row .bottom h3{
+.left-row .mid h3,
+.left-row .bottom h3 {
 	margin-top: 32px;
 	text-align: center;
 }
 
-.left-row .bottom figure{
+.left-row .bottom figure {
 	background-color: var(--clr-primary-500);
 	padding: 19px;
 	border-radius: 50%;
 	width: max-content;
-	margin:0 auto;
+	margin: 0 auto;
 }
-.left-row .bottom .feature-description{
+.left-row .bottom .feature-description {
 	margin-top: 16px;
 }
-.inner-wrapper-top figure{
+.inner-wrapper-top figure {
 	width: max-content;
 	border: 1px solid var(--clr-fade-200);
 	border-radius: 50%;
@@ -201,20 +217,20 @@ h3 {
 	position: relative;
 }
 
-.inner-wrapper-top h3{
+.inner-wrapper-top h3 {
 	text-align: center;
 	position: relative;
 	width: max-content;
 	margin: 16px auto;
 	padding-left: 20px;
 }
-.inner-wrapper-top h3::before{
+.inner-wrapper-top h3::before {
 	content: url('../assets/features/money-symbol.png');
 	position: absolute;
 	left: 0;
 	padding-top: 4px;
 }
-.inner-wrapper-top h3::after{
+.inner-wrapper-top h3::after {
 	content: '';
 	position: absolute;
 	bottom: -10px;
@@ -224,31 +240,30 @@ h3 {
 	background: var(--clr-fade-200);
 }
 
-.inner-wrapper-top .feature-description span{
+.inner-wrapper-top .feature-description span {
 	display: block;
 }
-.inner-wrapper-top .feature-description{
+.inner-wrapper-top .feature-description {
 	line-height: 1.8;
 }
-.inner-wrapper-mid{
+.inner-wrapper-mid {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 32px;
 }
-.inner-wrapper-mid span{
+.inner-wrapper-mid span {
 	display: block;
 	font-family: var(--ff-dm-sans);
 	padding: 6px 18px;
 }
-.inner-wrapper-mid-left span{
+.inner-wrapper-mid-left span {
 	font-size: var(--fs-500);
 }
-.inner-wrapper-mid-right .feature-description{
+.inner-wrapper-mid-right .feature-description {
 	font-size: var(--fs-400);
 }
 
-
-.inner-wrapper-bottom{
+.inner-wrapper-bottom {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -259,29 +274,102 @@ h3 {
 	margin-top: 32px;
 }
 
-.inner-wrapper-bottom-left figure{
+.inner-wrapper-bottom-left figure {
 	width: max-content;
 	background-color: var(--clr-primary-600);
 	border-radius: 50%;
 	padding: 4px;
 }
-.inner-wrapper-bottom-bottom span{
+.inner-wrapper-bottom-bottom span {
 	display: block;
 	text-align: left;
 	padding: 4px 0;
 }
-.inner-wrapper-bottom-right figure{
+.inner-wrapper-bottom-right figure {
 	width: max-content;
 }
-.inner-wrapper{
+.inner-wrapper {
 	padding: 15px;
 	border: 1px solid var(--clr-fade-200);
 	border-radius: 20px;
 }
-.mid-bottom-wrapper{
+.mid-bottom-wrapper {
 	text-align: center;
 	padding: 30px 12px;
 }
-.mid-bottom-wrapper .feature-description{
+.mid-bottom-wrapper .feature-description {
 	margin-top: 16px;
+}
+.savings-wrapper-content {
+	padding: 16px;
+}
+.savings-wrapper-content > span {
+	display: block;
+	margin-top: 16px;
+	font-size: var(--fs-650);
+	display: flex;
+	align-items: center;
+	width: max-content;
+}
+.savings-wrapper-content > span figure {
+	width: max-content;
+	margin-right: 12px;
+}
+.savings-wrapper-inner {
+	display: flex;
+	flex-wrap: wrap;
+}
+.savings-wrapper-inner > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+	border: 1px solid var(--clr-fade-200);
+	border-radius: 22px;
+	font-family: var(--ff-dm-sans);
+	width: 40%;
+	margin: 8px;
+}
+.savings-wrapper-inner h4 {
+	color: var(--clr-fade-600);
+	font-weight: var(--fw-regular);
+	position: relative;
+	padding-left: 25px;
+
+}
+.savings-wrapper-inner div h4::before{
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.savings-wrapper-inner .savings h4::before{
+	background-color: var(--clr-green-300);
+}
+.savings-wrapper-inner .spending h4::before{
+	background-color: var(--clr-red-300);
+}
+.savings-wrapper-inner .investment h4::before{
+background-color: var(--clr-yellow-300);
+}
+.savings-wrapper-inner .bills h4::before{
+	background-color: var(--clr-blue-300);
+}
+
+
+.savings-wrapper-inner > div span:nth-child(3) {
+	padding: 5px;
+	border-radius: 20px;
+}
+.savings-wrapper-inner .savings span:nth-child(3), .savings-wrapper-inner .bills span:nth-child(3) {
+	color: var(--clr-green-900);
+	background-color: var(--clr-green-300);
+}
+.savings-wrapper-inner .spending span:nth-child(3), .savings-wrapper-inner .investment span:nth-child(3) {
+	color: var(--clr-red-500);
+	background-color: var(--clr-red-200);
 }

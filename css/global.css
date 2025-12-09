@@ -87,11 +87,8 @@ figure {
 .row {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 -15px;
 }
-.col {
-	padding: 0 15px;
-}
+
 .container {
 	max-width: 1320px;
 	width: 100%;
