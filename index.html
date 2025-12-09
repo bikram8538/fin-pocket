@@ -4,7 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Fin Pocket</title>
+		<!-- Favicon -->
 		<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+		<!-- Fontawsome CDN -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -12,16 +14,17 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<!-- Swiper Js CDN -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/media.css">
 	</head>
 	<body>
 		<header>
 			<div class="navbar">
 				<div class="container">
 					<nav>
-						<div class="nav-logo">
-							<img src="./assets/navbar/logo.svg" alt="logo" />
-						</div>
+						<a href="" class="nav-logo"> <img src="./assets/navbar/logo.svg" alt="logo" /></a>
 						<div class="nav-collapsed">
 							<ul class="nav-items">
 								<li class="nav-list"><a class="nav-links active" href="#">Home</a></li>
@@ -124,19 +127,81 @@
 				<div class="container">
 					<div class="banner-content">
 						<h1>Take Control of Your Money With Smarter Budgeting</h1>
-						<p>A simple, secure, and effective financial management system designed for everyday users.</p>
+						<p>
+							A simple, secure, and effective financial management system designed for everyday
+							users.
+						</p>
 						<div class="banner-btn">
 							<a href="" class="btn btn-primary">Get Started</a>
 							<a href="" class="btn btn-secondary">Sign Up</a>
 						</div>
 					</div>
-					<!-- <div class="banner-image">
-						<figure><img src="./assets/banner/banner-image.png" alt="lady-with-"></figure>
-					</div> -->
+					<div class="banner-glow">
+						<img src="./assets/banner/banner-glow.webp" alt="Banner Glow Layer" />
+					</div>
+					<div class="banner-grid">
+						<img src="./assets/banner/home-banner-grid.webp" alt="Banner Grid Layer" />
+					</div>
+				</div>
+			</section>
+
+			<section class="clients">
+				<div class="container">
+					<h2>Trusted by more than 20000+ users</h2>
+
+					<!-- 01 Slider main container -->
+					<div class="clients-swiper">
+						<!-- 02 Additional required wrapper -->
+						<div class="clients-wrapper">
+							<!-- 03 Slides -->
+							<div class="client-slide">
+								<figure class="clients-img">
+									<img src="./assets/users/google-pay.png" alt="google-pay" />
+								</figure>
+							</div>
+							<div class="client-slide">
+								<figure class="clients-img">
+									<img src="./assets/users/phonepe.png" alt="phonepe" />
+								</figure>
+							</div>
+							<div class="client-slide">
+								<figure class="clients-img">
+									<img src="./assets/users/razorpay.png" alt="razorpay" />
+								</figure>
+							</div>
+							<div class="client-slide">
+								<figure class="clients-img">
+									<img src="./assets/users/hdfc.png" alt="hdfc" />
+								</figure>
+							</div>
+							<div class="client-slide">
+								<figure class="clients-img">
+									<img src="./assets/users/paytm.png" alt="paytm" />
+								</figure>
+							</div>
+							<div class="client-slide">
+								<figure class="clients-img">
+									<img src="./assets/users/paypal.png" alt="paypal" />
+								</figure>
+							</div>
+							<div class="client-slide">
+								<figure class="clients-img">
+									<img src="./assets/users/icici.png" alt="icici" />
+								</figure>
+							</div>
+							<div class="client-slide">
+								<figure class="clients-img">
+									<img src="./assets/users/bharat-pay.png" alt="bharat-pay" />
+								</figure>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
-
+		<!-- Swiper JS CDN -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+		<!-- Nav Toggler -->
 		<script>
 			const navToggle = document.querySelector('.nav-toggle');
 			const navCollapsed = document.querySelector('.nav-collapsed');
@@ -146,12 +211,37 @@
 				navToggle.classList.toggle('active');
 			});
 		</script>
-
+		<!-- Measuring Header Height -->
 		<script>
 			const navbar = document.querySelector('header');
 			const navbarHeight = navbar.offsetHeight;
 			console.log(navbarHeight);
+		</script>
 
+		<script>
+			function cloneClientSlide() {
+				const wrapper = document.querySelector('.clients-wrapper');
+				const slides = Array.from(wrapper.children);
+			}
+		</script>
+		<script>
+			const swiper = new Swiper('.clients-swiper', {
+				wrapperClass: 'clients-wrapper',
+				slideClass: 'client-slide',
+				loop: true,
+				slidesPerView: 'auto',
+				spaceBetween: 30,
+				freeMode: {
+					enabled: true,
+					sticky: false,
+					momentum: false,
+				},
+				autoplay: {
+					delay: 0,
+					disableOnInteraction: false,
+				},
+				speed: 5000,
+			});
 		</script>
 	</body>
 </html>
