@@ -29,6 +29,7 @@
 
 	--clr-fade-200: rgba(0, 0, 0, 0.2);
 	--clr-fade-600: rgba(0, 0, 0, 0.6);
+	--clr-fade-700: rgba(0, 0, 0, 0.7);
 
 	/* FONT FAMILY */
 	--ff-stolzl: 'stolzl', sans-serif;
@@ -178,7 +179,9 @@ h3 {
 	opacity: 0.6;
 	text-align: center;
 }
-
+.feature-wrapper-row {
+	margin-top: 70px;
+}
 .left-row .top {
 	display: flex;
 	justify-content: space-between;
@@ -187,14 +190,16 @@ h3 {
 .left-row .mid,
 .left-row .bottom,
 .mid-main-wrapper,
-.savings-wrapper {
+.savings-wrapper,
+.right-row-top,
+.right-row-bottom {
 	padding: 18px;
 	border-radius: 22px;
 	border: 1px solid var(--clr-fade-200);
 	margin: 12px;
 }
-.left-row .col-5 > div{
-	padding: 28.5px 18px;
+.left-row .col-5 > div {
+	padding: 22px 18px;
 }
 .left-row .mid h3,
 .left-row .bottom h3 {
@@ -254,12 +259,17 @@ h3 {
 	justify-content: space-between;
 	margin-top: 32px;
 }
-.inner-wrapper-mid span {
+.inner-wrapper-mid li {
 	display: block;
 	font-family: var(--ff-dm-sans);
-	padding: 6px 18px;
 }
-.inner-wrapper-mid-left span {
+.inner-wrapper-mid li:first-child {
+	margin-bottom: 8px;
+}
+.inner-wrapper-mid-right li {
+	text-align: right;
+}
+.inner-wrapper-mid-left li {
 	font-size: var(--fs-500);
 }
 .inner-wrapper-mid-right .feature-description {
@@ -303,6 +313,9 @@ h3 {
 .mid-bottom-wrapper .feature-description {
 	margin-top: 16px;
 }
+
+/* ==== savings bottom start ==== */
+
 .savings-wrapper-content {
 	padding: 16px;
 }
@@ -338,9 +351,8 @@ h3 {
 	font-weight: var(--fw-regular);
 	position: relative;
 	padding-left: 25px;
-
 }
-.savings-wrapper-inner div h4::before{
+.savings-wrapper-inner div h4::before {
 	content: '';
 	position: absolute;
 	width: 15px;
@@ -350,29 +362,101 @@ h3 {
 	top: 50%;
 	transform: translateY(-50%);
 }
-.savings-wrapper-inner .savings h4::before{
+.savings-wrapper-inner .savings h4::before {
 	background-color: var(--clr-green-300);
 }
-.savings-wrapper-inner .spending h4::before{
+.savings-wrapper-inner .spending h4::before {
 	background-color: var(--clr-red-300);
 }
-.savings-wrapper-inner .investment h4::before{
-background-color: var(--clr-yellow-300);
+.savings-wrapper-inner .investment h4::before {
+	background-color: var(--clr-yellow-300);
 }
-.savings-wrapper-inner .bills h4::before{
+.savings-wrapper-inner .bills h4::before {
 	background-color: var(--clr-blue-300);
 }
-
 
 .savings-wrapper-inner > div span:nth-child(3) {
 	padding: 5px;
 	border-radius: 20px;
 }
-.savings-wrapper-inner .savings span:nth-child(3), .savings-wrapper-inner .bills span:nth-child(3) {
+.savings-wrapper-inner .savings span:nth-child(3),
+.savings-wrapper-inner .bills span:nth-child(3) {
 	color: var(--clr-green-900);
 	background-color: var(--clr-green-300);
 }
-.savings-wrapper-inner .spending span:nth-child(3), .savings-wrapper-inner .investment span:nth-child(3) {
+.savings-wrapper-inner .spending span:nth-child(3),
+.savings-wrapper-inner .investment span:nth-child(3) {
 	color: var(--clr-red-500);
 	background-color: var(--clr-red-200);
+}
+
+/* ==== savings bottom end==== */
+
+/* ==== right chart top start=== */
+.right-row-top-content {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 18px;
+}
+.right-row-top-content li {
+	color: var(--clr-fade-700);
+	font-size: var(--fs-400);
+	font-weight: var(--fw-regular);
+	font-family: var(--ff-dm-sans);
+	position: relative;
+	padding-left: 20px;
+	display: block;
+	width: max-content;
+	margin: 0 6px;
+}
+.right-row-top-content li::before {
+	position: absolute;
+	left: 0;
+	top: calc(50% - 8px);
+}
+.right-row-top-content li:nth-child(1)::before {
+	content: url('../assets/features/investement-before.svg');
+}
+.right-row-top-content li:nth-child(2)::before {
+	content: url('../assets/features/expences-before.svg');
+}
+.right-row-top-content li:nth-child(3)::before {
+	content: url('../assets/features/savings-before.svg');
+}
+/* ==== right chart top end=== */
+
+/* ==== right chart bottom end=== */
+
+.right-row-bottom {
+	text-align: center;
+	padding: 29px;
+}
+.right-row-bottom figure {
+	width: fit-content;
+	margin: 0 auto;
+	position: relative;
+	box-shadow: 10px 9px 250px 0 rgba(4, 115, 255, 0.25);
+}
+.right-row-bottom-content h3 {
+	margin-top: 16px;
+}
+.right-row-bottom-content p {
+	margin-top: 16px;
+}
+
+@media screen and (max-width: 1250px) {
+	body {
+		background-color: red;
+	}
+	.col-lg-6 {
+		width: calc(var(--one-col) * 6);
+	}
+	.col-lg-5 {
+		width: calc(var(--one-col) * 5);
+	}
+	.col-lg-7 {
+		width: calc(var(--one-col) * 7);
+	}
 }
