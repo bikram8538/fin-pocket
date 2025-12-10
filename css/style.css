@@ -182,6 +182,15 @@ h3 {
 .feature-wrapper-row {
 	margin-top: 70px;
 }
+.left-row .top-left{
+	height: 100%;
+	/* background-color: red; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .left-row .top {
 	display: flex;
 	justify-content: space-between;
@@ -189,7 +198,7 @@ h3 {
 .left-row .top,
 .left-row .mid,
 .left-row .bottom,
-.mid-main-wrapper,
+.left-row .mid-main-wrapper,
 .savings-wrapper,
 .right-row-top,
 .right-row-bottom {
@@ -198,15 +207,16 @@ h3 {
 	border: 1px solid var(--clr-fade-200);
 	margin: 12px;
 }
-.left-row .col-5 > div {
-	padding: 22px 18px;
-}
+
 .left-row .mid h3,
 .left-row .bottom h3 {
 	margin-top: 32px;
 	text-align: center;
 }
-
+.left-row .top-left > div{
+	flex-grow: 1;
+	width: 100%;
+}
 .left-row .bottom figure {
 	background-color: var(--clr-primary-500);
 	padding: 19px;
@@ -293,7 +303,7 @@ h3 {
 	border-radius: 50%;
 	padding: 4px;
 }
-.inner-wrapper-bottom-mid{
+.inner-wrapper-bottom-mid {
 	padding: 0 16px;
 }
 .inner-wrapper-bottom-mid span {
@@ -346,8 +356,8 @@ h3 {
 	border: 1px solid var(--clr-fade-200);
 	border-radius: 22px;
 	font-family: var(--ff-dm-sans);
-	width: 267px;
-	/* flex-grow: 1; */
+	flex: 1 1 267px;
+	max-width: 320px;
 	margin: 8px;
 }
 .savings-wrapper-inner h4 {
@@ -397,6 +407,12 @@ h3 {
 /* ==== savings bottom end==== */
 
 /* ==== right chart top start=== */
+.right-row{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: space-between;
+}
 .right-row-top-content {
 	text-align: center;
 	display: flex;
@@ -451,7 +467,6 @@ h3 {
 }
 
 @media screen and (max-width: 1200px) {
-
 	.col-xl-1 {
 		width: calc(var(--one-col) * 1);
 	}
@@ -495,10 +510,11 @@ h3 {
 	.right-row > div{
 		flex-grow: 1;
 	}
-
 }
-@media screen and (max-width: 991px){
-
+@media screen and (max-width: 991px) {
+	.savings-wrapper-inner > div {
+		max-width: 320px;
+	}
 	.col-lg-1 {
 		width: calc(var(--one-col) * 1);
 	}
@@ -535,11 +551,8 @@ h3 {
 	.col-lg-12 {
 		width: calc(var(--one-col) * 12);
 	}
-
-
 }
-@media screen and (max-width: 767px){
-
+@media screen and (max-width: 767px) {
 	.col-md-1 {
 		width: calc(var(--one-col) * 1);
 	}
@@ -576,10 +589,8 @@ h3 {
 	.col-md-12 {
 		width: calc(var(--one-col) * 12);
 	}
-
-
 }
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
 	.col-sm-1 {
 		width: calc(var(--one-col) * 1);
 	}
@@ -616,6 +627,4 @@ h3 {
 	.col-sm-12 {
 		width: calc(var(--one-col) * 12);
 	}
-
-
 }
