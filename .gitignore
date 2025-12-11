@@ -1,2 +1,68 @@
-.vscode
+# -----------------------------
+# OS-Specific Files
+# -----------------------------
 .DS_Store
+Thumbs.db
+
+# -----------------------------
+# VS Code Settings
+# -----------------------------
+.vscode/
+*.code-workspace
+
+# -----------------------------
+# Node / Build Tools (if added later)
+# -----------------------------
+node_modules/
+dist/
+build/
+.cache/
+.next/
+out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# -----------------------------
+# Env Files
+# -----------------------------
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# -----------------------------
+# Logs
+# -----------------------------
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# -----------------------------
+# Temporary Files
+# -----------------------------
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# -----------------------------
+# Design / Export Folders
+# -----------------------------
+export/
+design/
+assets-export/
+
+# -----------------------------
+# System Backups
+# -----------------------------
+*.bak
+*.backup
+
+# -----------------------------
+# Mac Finder Metadata
+# -----------------------------
+._*
