@@ -82,6 +82,7 @@ img {
 }
 figure {
 	overflow: hidden;
+	width: fit-content;
 }
 
 .row {
