@@ -15,6 +15,7 @@
 	--clr-neutral-200: #F0EDED;
 	--clr-neutral-250: #F4FCFE;
 	--clr-primary-300: #6dddff;
+	--clr-primary-350: #BCF4FF;
 	--clr-primary-400: #4cc7ff;
 	--clr-primary-500: #002fff;
 	--clr-primary-600: #2da94f;
@@ -669,9 +670,62 @@ h3 {
 	margin-top: 20px;
 }
 
+/* ====== why choose us section ===== */
 
 
 
+.why-choose-us h3{
+	font-size: var(--fs-550);
+	font-family: var(--ff-stolzl);
+	font-weight: var(--fw-regular);
+	letter-spacing: var(--ls-400);
+	color: var(--clr-neutral-900);
+}
+.why-choose-us p{
+	font-family: var(--ff-dm-sans);
+	font-size: var(--fs-500);
+	font-weight: var(--fw-regular);
+	color: var(--clr-fade-600);
+
+}
+.buddget-planner-left, .buddget-planner-right{
+	margin: 32px;
+}
+.buddget-planner-left figure{
+	margin: 0 auto;
+	width: fit-content;
+	height: 100%;
+}
+.buddget-planner-right{
+	min-height: calc(100% - 100px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	gap: 150px;
+}
+.buddget-planner-right > div{
+	padding-left: 170px;
+	position: relative;
+}
+.buddget-planner-right > div::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: calc(50% - 70px);
+	margin-left: 16px;
+	border-radius: 44px;
+	padding: 70px;
+}
+.buddget-planner-right > .top::before{
+	background: var(--clr-primary-350) url(../assets/why-choose-us/laptop-mobile.svg) center 50px no-repeat;
+}
+.buddget-planner-right > .mid::before{
+	background: var(--clr-primary-350) url(../assets/why-choose-us/object-subtract.svg) center 50px no-repeat;
+}
+.buddget-planner-right > .bottom::before{
+	background: var(--clr-primary-350) url(../assets/why-choose-us/money-bill-wheat.svg) center 50px no-repeat;
+}
 
 
 
