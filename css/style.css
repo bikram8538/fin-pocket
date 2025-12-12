@@ -726,8 +726,12 @@ h3 {
 .buddget-planner-right > .bottom::before{
 	background: var(--clr-primary-350) url(../assets/why-choose-us/money-bill-wheat.svg) center 50px no-repeat;
 }
-
-
+.section-btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 32px;
+}
 
 
 
