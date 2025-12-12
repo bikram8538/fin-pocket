@@ -13,6 +13,7 @@
 	--clr-neutral-100: #ffffff;
 	--clr-neutral-150: #ECECEC;
 	--clr-neutral-200: #F0EDED;
+	--clr-neutral-250: #F4FCFE;
 	--clr-primary-300: #6dddff;
 	--clr-primary-400: #4cc7ff;
 	--clr-primary-500: #002fff;
@@ -30,6 +31,7 @@
 	--clr-yellow-300: #fade8b; /* pastel yellow */
 
 	--clr-fade-200: rgba(0, 0, 0, 0.2);
+	--clr-fade-250: rgba(0, 0, 0, 0.25);
 	--clr-fade-600: rgba(0, 0, 0, 0.6);
 	--clr-fade-700: rgba(0, 0, 0, 0.7);
 
@@ -146,7 +148,6 @@ section.clients {
 	padding: 15px 20px;
 	border-radius: 50px;
 	border: 1px solid var(--clr-fade-200);
-	margin-bottom: 48px;
 }
 
 .sec-heading {
@@ -154,7 +155,7 @@ section.clients {
 	font-size: var(--fs-800);
 	letter-spacing: var(--ls-400);
 	text-align: center;
-	margin-bottom: 48px;
+	margin: 48px 0;
 }
 
 .sec-heading span {
@@ -501,8 +502,6 @@ h3 {
 	color: var(--clr-neutral-900);
 }
 .daily-use-wrapper .row{
-	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
 	align-items: stretch;
 }
@@ -613,11 +612,62 @@ h3 {
 /* == daily-use-row mid end ==*/
 
 
+/* ===== Service Section === */
 
+.section-content{
+	max-width: 827px;
+	margin: 0 auto;
+}
+.section-content p{
+	max-width: 80%;
+	margin: 0 auto;
+}
 
-/* daily use row start end*/
+.service-card-wrapper{
+	margin-top: 80px;
+}
+.service-card-wrapper .row{
+	align-items: stretch;
+	justify-content: center;
+}
+.service-card-wrapper .row > div{
+	display: flex;
+}
 
-
+.service-card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--clr-neutral-250);
+	margin: 16px 8px;
+	padding: 10px;
+	border-radius: 20px;
+	border: 1px solid var(--clr-fade-200);
+	box-shadow: 0 4px 4px 0 var(--clr-fade-250);
+}
+.service-card figure{
+	border-radius: 20px;
+	border: 1px solid var(--clr-fade-200);
+}
+.service-content{
+	margin-top: 32px;
+	text-align: center;
+}
+.service-content h3{
+	font-family: var(--ff-stolzl);
+	font-size: var(--fs-550);
+	font-weight: var(--fw-regular);
+	letter-spacing: var(--ls-400);
+	color: var(--clr-neutral-900);
+}
+.service-content p{
+	font-family: var(--ff-dm-sans);
+	font-size: var(--fs-500);
+	font-weight: var(--fw-regular);
+	color: var(--clr-fade-600);
+	line-height: 1.2;
+	margin-top: 20px;
+}
 
 
 
