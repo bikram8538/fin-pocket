@@ -4,19 +4,57 @@
 =========================== */
 
 .banner {
-	min-height: 90vh;
-	padding: 100px 0;
-	background:
-	/* url('../assets/banner/portrait-smiling-happy-man-holding.png'), */
-		linear-gradient(to top right, #8211ff 52%, var(--clr-primary-500) 99%);
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	background-clip: border-box;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	min-height: 100vh;
 	position: relative;
+	background: var(--clr-primary-900);
+	overflow: hidden;
+
 }
+.banner::before,
+.banner::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	width: 40%;
+	height: 100%;
+	pointer-events: none;
+}
+.banner::before{
+	left: 0;
+	background: radial-gradient(circle at left center, rgba(185, 251, 106, 0.6), transparent 60%);
+}
+.banner::after{
+	right: 0;
+	background: radial-gradient(circle at right center, rgba(185, 251, 106, 0.6), transparent 60%);
+
+}
+.banner-grid {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+
+  background-image:
+    repeating-linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.05) 0,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 40px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.05) 0,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 40px
+    );
+}
+.banner > *:not(.banner-grid) {
+  position: relative;
+  z-index: 3;
+}
+
 .banner .container {
 	display: flex;
 	align-items: center;

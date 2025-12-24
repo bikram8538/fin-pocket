@@ -1,9 +1,19 @@
-
 /* ===========================
 	RESPONSIVE
 =========================== */
 
 @media screen and (max-width: 1110px) {
+	.navbar::after {
+		width: 20%;
+		top: 0px;
+		left: 90%;
+	}
+	.navbar::before {
+		width: 20%;
+		top: 0;
+		left: 90%;
+	}
+
 	.nav-toggle {
 		display: block;
 	}
@@ -47,4 +57,3 @@
 		color: var(--clr-neutral-900);
 	}
 }
-

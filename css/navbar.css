@@ -1,10 +1,37 @@
-
-/* ===========================
-	NAVBAR
-=========================== */
-
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 999;
+}
 .navbar {
 	padding: 20px 0;
+	position: relative;
+}
+.navbar::before,
+.navbar::after {
+	content: '';
+	position: absolute;
+	pointer-events: none;
+	filter: blur(25px);
+}
+.navbar::after {
+	top: -90%;
+	left: 5%;
+	width: 80%;
+	height: 100%;
+	background: radial-gradient(circle at center center, rgba(185, 251, 106, 0.6), transparent 70%);
+}
+.navbar::before {
+	top: 60%;
+	left: 40%;
+	translate: -40%;
+	width: 55%;
+	height: 90%;
+	background: radial-gradient(circle at center center, rgba(185, 251, 106, 0.6), transparent 75%);
+	opacity: 0.5;
 }
 nav {
 	display: flex;
@@ -21,9 +48,14 @@ nav {
 	display: flex;
 	align-items: center;
 	margin: 0 auto;
-	padding: 15px 28px;
-	border-radius: 50px;
-	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 15px 20px;
+	border-radius: 100px;
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	box-shadow: 0 0 40px rgba(130, 228, 12, 0.25), inset 0 0 20px rgba(255, 255, 255, 0.05);
 }
 .nav-actions {
 	display: flex;
@@ -43,15 +75,15 @@ nav {
 }
 .nav-links {
 	font-family: var(--ff-stolzl);
-	font-size: var(--fs-400);
-	font-weight: var(--fw-medium);
-	color: var(--clr-neutral-900);
+	font-size: var(--fs-300);
+	font-weight: var(--fw-reglar);
+	color: var(--clr-primary-100);
 	transition: all 0.3s ease-in-out;
 	padding: 10px 12px;
 	border-radius: 50px;
 }
 .nav-links:hover {
-	background-color: var(--clr-primary-500);
+	background-color: var(--clr-primary-200);
 	color: var(--clr-neutral-100);
 }
 
@@ -63,9 +95,8 @@ nav {
 	transition: fill 0.3s ease-in-out;
 }
 .nav-actions-svg:hover path {
-	fill: var(--clr-primary-500);
+	fill: var(--clr-primary-200);
 }
-
 
 .nav-toggle {
 	display: none;
@@ -74,7 +105,7 @@ nav {
 .nav-toggle svg {
 	width: 40px;
 	height: 40px;
-	fill: var(--clr-primary-500);
+	fill: var(--clr-primary-200);
 }
 .nav-right {
 	display: flex;
