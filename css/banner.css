@@ -1,13 +1,12 @@
-
-/* ===========================
-	BANNER
-=========================== */
-
 .banner {
 	min-height: 100vh;
 	position: relative;
 	background: var(--clr-primary-900);
 	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 150px 0;
 
 }
 .banner::before,
@@ -57,63 +56,49 @@
 
 .banner .container {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
+	flex-direction: column;
 }
 .banner-content {
-	/* position: relative; */
-	max-width: 700px;
+	max-width: 1000px;
 	width: 100%;
-	color: var(--clr-neutral-100);
+	margin: 0 auto;
+	color: var(--clr-primary-100);
 	z-index: 5;
+	text-align: center;
+}
+.banner-content span{
+	color: var(--clr-primary-200);
 }
 h1 {
+	font-family: var(--ff-stolzl);
 	font-size: var(--fs-900);
-	font-weight: var(--fw-bold);
-	letter-spacing: var(--ls-500);
-	margin-bottom: 50px;
+	font-weight: var(--fw-regular);
+	letter-spacing: var(--letter-spacing-300);
+	margin-bottom: 32px;
 }
 .banner-content p {
 	font-family: var(--ff-dm-sans);
-	font-size: var(--fs-400);
+	font-size: var(--fs-350);
 	font-weight: var(--fw-regular);
-	max-width: 550px;
+	max-width: 600px;
+	width: 100%;
+	margin: 0 auto;
 }
 .banner-btn {
 	display: flex;
 	align-items: center;
-	margin-top: 80px;
+	margin: 32px auto;
+	width: fit-content;
+}
+.banner-btn .btn{
+	width: 162px;
 }
 .banner-btn .btn-primary {
 	margin-right: 50px;
 }
 
 
-.banner-glow,
-.banner-grid {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-}
-.banner-glow {
-	z-index: 3;
-	opacity: 0.8;
-}
-.banner-grid {
-	z-index: 4;
-}
-.banner-image{
-	height: 90%;
-	position: absolute;
-	margin-left: auto;
-	bottom: 0;
-	right: 0;
-}
 @media screen and (max-width: 767px){
-	.banner-image{
-		display: none;
-	}
+	
 }
