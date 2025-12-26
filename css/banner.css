@@ -3,9 +3,6 @@
   position: relative;
   background: var(--clr-primary-900);
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
   padding: 150px 0;
 }
 .banner::before,
