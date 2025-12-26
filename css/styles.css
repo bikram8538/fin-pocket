@@ -4,13 +4,18 @@
 #client-top {
   transform: rotate(6deg);
 }
-
+#client-top .clients-img img{
+    transform: skew(10deg);
+}
 #client-bottom {
   position: absolute;
   transform: rotate(-6deg);
   top: -5px;
 }
+#client-bottom .clients-img img{
+    transform: skew(-10deg);
 
+}
 .clients {
   padding: 12px 0;
   width: 100%;
