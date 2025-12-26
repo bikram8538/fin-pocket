@@ -36,7 +36,7 @@
 .banner-grid {
   position: absolute;
   inset: 0;
-  z-index: 2;
+  z-index: 1;
   pointer-events: none;
 
   background-image: repeating-linear-gradient(
@@ -56,7 +56,7 @@
 }
 .banner > *:not(.banner-grid) {
   position: relative;
-  z-index: 3;
+  z-index: 2;
 }
 
 .banner .container {
@@ -75,7 +75,7 @@
 .banner-content span {
   color: var(--clr-primary-200);
 }
-h1 {
+.banner h1 {
   font-family: var(--ff-stolzl);
   font-size: var(--fs-900);
   font-weight: var(--fw-regular);
@@ -103,8 +103,20 @@ h1 {
   margin-right: 50px;
 }
 
+@media (max-width: 768px) {
+  .banner-grid {
+    background-size: 60px 60px;
+  }
+}
+/* Mobile Responsiveness */
+@media (max-width: 575px) {
+  .banner::before,
+.banner::after {
+  width: 100%;
+}
+
+}
 @media screen and (max-width: 425px) {
-	
   .banner-btn .btn {
     width: auto;
   }
