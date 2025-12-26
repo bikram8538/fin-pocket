@@ -54,7 +54,10 @@
     --letter-spacing-300: -0.03em;
 
 }
-
+html{
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
 * {
 	margin: 0;
 	padding: 0;
