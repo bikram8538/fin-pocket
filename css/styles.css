@@ -55,6 +55,12 @@
     transparent 95%
   );
 }
+.section-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
 h3 {
   font-family: var(--ff-dm-sans);
   color: var(--clr-primary-100);
