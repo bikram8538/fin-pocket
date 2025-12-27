@@ -16,7 +16,7 @@ section::before {
   background: radial-gradient(
     circle at left center,
     rgba(185, 251, 106, 0.6),
-    transparent 60%
+    transparent 85%
   );
 }
 section::after {
@@ -24,8 +24,33 @@ section::after {
   background: radial-gradient(
     circle at right center,
     rgba(185, 251, 106, 0.6),
-    transparent 60%
+    transparent 85%
   );
+}
+.grid {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+
+  background-image: repeating-linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.05) 0,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 40px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.05) 0,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 40px
+    );
+}
+.banner > *:not(.grid) {
+  position: relative;
+  z-index: 12;
 }
 
 @media (max-width: 768px) {
