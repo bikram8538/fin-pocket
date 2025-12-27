@@ -5,6 +5,67 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+.footer-sec {
+  overflow-x: hidden;
+}
+.footer-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 28px;
+}
+.figma-newsletter {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 420px) {
+  .figma-newsletter {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer-row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer-col,
+  .footer-col-logo {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer-logo img {
+    max-width: 140px;
+    height: auto;
+  }
+
+  .newsletter-form,
+  .figma-newsletter {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .newsletter-form input,
+  .figma-newsletter input,
+  .figma-newsletter button {
+    width: 100%;
+  }
+
+  .social-img {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
 :root {
   --primary-color: #0473ff;
   --secondary-color: #000000;
@@ -15,8 +76,6 @@
 .footer-sec {
   padding: 60px 0 60px;
   font-family: "DM Sans", sans-serif;
-}
-.footer-sec {
   position: relative;
   overflow: hidden;
 }
@@ -297,7 +356,6 @@
 /*  Tablet / Large Mobile ≤ 768px */
 /* ============================= */
 @media (max-width: 768px) {
-  
   .footer-sec {
     padding: 50px 0;
   }
