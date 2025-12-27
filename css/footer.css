@@ -1,0 +1,449 @@
+/* footer-sction */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #0473ff;
+  --secondary-color: #000000;
+  --border: #656c65;
+  --footer-color: #dceefa;
+  --footer-text: #ffffff;
+}
+.footer-sec {
+  padding: 60px 0 60px;
+  font-family: "DM Sans", sans-serif;
+}
+.footer-sec {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-sec::before,
+.footer-sec::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 420px;
+  height: 420px;
+
+  pointer-events: none;
+  z-index: -1;
+  filter: blur(60px);
+}
+
+.footer-sec::before {
+  left: -120px;
+  background: radial-gradient(
+    circle,
+    rgba(185, 251, 106, 0.7),
+    transparent 65%
+  );
+}
+
+.footer-sec::after {
+  right: -120px;
+  background: radial-gradient(
+    circle,
+    rgba(185, 251, 106, 0.7),
+    transparent 65%
+  );
+}
+
+.footer-row {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr 1fr 1fr 1.2fr;
+  gap: 60px;
+}
+
+/* Logo Column */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 73px;
+}
+
+.footer-text {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 40px 0 40px;
+  color: var(--footer-text);
+}
+
+/* Newsletter */
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 50px;
+  padding: 4px;
+  max-width: 380px;
+  margin: 0 0 60px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 50px;
+}
+.figma-newsletter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  max-width: 420px;
+  padding: 0;
+
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  box-shadow: inset 0 0 0.5px rgba(255, 255, 255, 0.6),
+    0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* Input */
+.figma-newsletter input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+
+  padding: 12px 18px;
+  font-size: 14px;
+  color: #ffffff;
+
+  border-radius: 50px;
+}
+
+.figma-newsletter input::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* Button */
+.figma-newsletter button {
+  border: 1px solid transparent; /* ⭐ ADD THIS */
+  outline: none;
+
+  padding: 12px 26px;
+  border-radius: 50px;
+
+  background: linear-gradient(135deg, #b9fb6a, #9eea42);
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  box-shadow: 0 0 12px rgba(185, 251, 106, 0.65),
+    inset 0 0 0.5px rgba(255, 255, 255, 0.7);
+
+  transition: all 0.35s ease;
+}
+
+/* ===== HOVER STATE ===== */
+.newsletter-form button:hover {
+  background: transparent !important;
+  color: #82e40c !important;
+  border: 1px solid #82e40c;
+}
+
+/* Social Icons */
+.social-img {
+  display: flex;
+  gap: 14px;
+}
+
+.social-img img {
+  width: 24px;
+}
+
+/* Other Columns */
+.footer-col h6 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 18px;
+  color: var(--footer-text);
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  color: var(--footer-text);
+  cursor: pointer;
+}
+
+.footer-col ul li:hover {
+  color: #27c2ff;
+}
+
+/* Bottom */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bottom-right > a > p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--footer-text);
+}
+.footer-bottom-left > a > p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--footer-text);
+}
+/* ===== Footer Link Hover ===== */
+.footer-col ul li {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li:hover {
+  color: #27c2ff;
+  transform: translateX(6px);
+}
+
+/* ===== Social Icon Hover ===== */
+.social-img a {
+  display: inline-flex;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-img a:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(39, 194, 255, 0.35);
+}
+
+/* ===== Newsletter Button Hover ===== */
+.newsletter-form button {
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background: #1aa9e0;
+  transform: scale(1.05);
+}
+/* media Query */
+/* =========================
+   RESPONSIVE BREAKPOINTS
+========================= */
+
+/* ---------- Large Desktop (1200px and below) ---------- */
+@media (max-width: 1200px) {
+  .footer-row {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-text {
+    font-size: 16px;
+  }
+}
+
+/* ============================= */
+/*  Tablet Landscape ≤ 992px */
+/* ============================= */
+@media (max-width: 992px) {
+  .footer-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .footer-col-logo {
+    grid-column: span 3;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+
+  .newsletter-form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+/* ============================= */
+/*  Tablet / Large Mobile ≤ 768px */
+/* ============================= */
+@media (max-width: 768px) {
+  
+  .footer-sec {
+    padding: 50px 0;
+  }
+
+  .footer-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .footer-col-logo {
+    grid-column: span 2;
+  }
+
+  .footer-col h6 {
+    font-size: 20px;
+  }
+
+  .footer-col ul li {
+    font-size: 16px;
+  }
+
+  .social-img {
+    justify-content: flex-start;
+  }
+}
+
+/* ============================= */
+/*  Mobile ≤ 576px */
+/* ============================= */
+@media (max-width: 576px) {
+  .footer-sec {
+    padding: 21px 0;
+  }
+  .footer-row {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .footer-col,
+  .footer-col-logo {
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-col ul li {
+    justify-content: center;
+  }
+
+  .social-img {
+    justify-content: center;
+  }
+
+  .newsletter-form {
+    max-width: 100%;
+  }
+
+  .figma-newsletter input {
+    font-size: 13px;
+  }
+
+  .figma-newsletter button {
+    padding: 10px 22px;
+    font-size: 13px;
+  }
+
+  .footer-bottom-left p,
+  .footer-bottom-right p {
+    font-size: 14px;
+  }
+}
+
+/* ============================= */
+/*  Small Mobile ≤ 360px */
+/* ============================= */
+@media (max-width: 360px) {
+  .footer-text {
+    font-size: 14px;
+  }
+
+  .footer-col h6 {
+    font-size: 18px;
+  }
+
+  .footer-col ul li {
+    font-size: 14px;
+  }
+
+  .social-img img {
+    width: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .footer-sec {
+    padding: 40px 0;
+  }
+
+  .footer-text {
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 20px 0 24px;
+  }
+
+  .footer-col h6 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .footer-col ul li {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  /* Newsletter stack */
+  .figma-newsletter {
+    flex-direction: column;
+    border-radius: 18px;
+    padding: 6px;
+  }
+
+  .figma-newsletter input {
+    width: 100%;
+    text-align: center;
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .figma-newsletter button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 13px;
+  }
+
+  /* Social icons */
+  .social-img {
+    gap: 10px;
+    margin-top: 8px;
+  }
+
+  .social-img img {
+    width: 18px;
+  }
+
+  /* Footer bottom */
+  .footer-bottom-left p,
+  .footer-bottom-right p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}
