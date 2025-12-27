@@ -13,6 +13,7 @@
   width: 40%;
   height: 100%;
   pointer-events: none;
+  z-index: 3;
 }
 .banner::before {
   left: 0;
@@ -30,10 +31,10 @@
     transparent 60%
   );
 }
-.banner-grid {
+.grid {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 2;
   pointer-events: none;
 
   background-image: repeating-linear-gradient(
@@ -51,7 +52,7 @@
       transparent 40px
     );
 }
-.banner > *:not(.banner-grid) {
+.banner > *:not(.grid) {
   position: relative;
   z-index: 2;
 }
@@ -99,19 +100,35 @@
 .banner-btn .btn-primary {
   margin-right: 50px;
 }
+.banner-image {
+  z-index: 998;
+}
 
 @media (max-width: 768px) {
-  .banner-grid {
+  .grid {
     background-size: 60px 60px;
+  }
+  .banner::before {
+    background: radial-gradient(
+      circle at left center,
+      rgba(185, 251, 106, 0.2),
+      transparent 60%
+    );
+  }
+  .banner::after {
+    background: radial-gradient(
+      circle at right center,
+      rgba(185, 251, 106, 0.2),
+      transparent 80%
+    );
   }
 }
 /* Mobile Responsiveness */
 @media (max-width: 575px) {
   .banner::before,
-.banner::after {
-  width: 100%;
-}
-
+  .banner::after {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 425px) {
   .banner-btn .btn {
