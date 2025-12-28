@@ -705,12 +705,25 @@ Features
   border-radius: 44px;
   margin-right: 24px;
 }
-.section-btn {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 32px;
+/* 
+  Dasshed Connecting Line
+.buddget-planner-right div:first-child{
+  position: relative;
+  background: rebeccapurple;
+  overflow: visible;
 }
+.buddget-planner-right div:first-child::before{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 11%;
+  height: 100%;
+  margin: 20px 0;
+  width: 7px;
+  border: 2px dashed var(--clr-primary-200);
+  z-index: -3;
+} */
+
 
 
 
