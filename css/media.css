@@ -10,8 +10,21 @@
     flex-grow: 1;
   }
 }
+
 @media screen and (max-width: 991px) {
   .savings-wrapper-inner > div {
     max-width: 320px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .buddget-planner-left{
+    display: none;
+  }
+  .buddget-planner-right{
+    margin: 0 auto;
+  }
+  .buddget-planner-right figure{
+    padding: 30px;
+    border-radius: 35px;
   }
 }
