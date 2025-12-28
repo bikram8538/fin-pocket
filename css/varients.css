@@ -13,7 +13,7 @@
   --clr-primary-200: #b9fb6a;
   --clr-primary-650: #82e40c;
   --clr-primary-700: #108406;
-  --clr-primary-800: #0F0F0F;
+  --clr-primary-800: #0f0f0f;
   --clr-primary-900: #000000;
 
   /* ===== Neutral */
@@ -56,7 +56,7 @@
   --fs-900: 56px; /* h1 */
 
   /* ===== Font Weight */
- --fw-light: 300; 
+  --fw-light: 300;
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-semibold: 600;
@@ -71,35 +71,19 @@
   /* GRID SYSTEM */
   --one-col: calc(100% / 12);
 }
-.glass {
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
 
-  /* Base glass color */
-  background: rgba(0, 0, 0, 0.2);
-
-  /* Refraction (80) + Frost (31) */
-  backdrop-filter: blur(22px) saturate(135%) contrast(95%);
-  -webkit-backdrop-filter: blur(22px) saturate(135%) contrast(95%);
-
-  /* Stroke (inside, ~20%) */
-  border: 1px solid rgba(255, 255, 255, 0.22);
-
-  /* Depth (20) */
-  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.25),
-    0 12px 36px rgba(0, 0, 0, 0.45);
-
-  color: var(--clr-primary-100);
-}
 
 .b {
   border: 1px solid white;
+}
+.r{
+  background-color: red !important;
 }
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
 body {
   background: var(--clr-primary-900);
 }
@@ -109,7 +93,7 @@ body {
   box-sizing: border-box;
 }
 section {
-  padding: 100px 0;
+  padding: 80px 0;
 }
 ul,
 ol,
@@ -121,7 +105,7 @@ a {
   text-decoration: none;
 }
 
-button {
+button{
   background: none;
   border: none;
   padding: 0;
@@ -156,10 +140,11 @@ input[type="number"] {
 .row {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
+  /* align-items: stretch; */
+  margin: 0 -15px;
 }
-.row > div {
-  padding: 0 12px;
+.col{
+  padding: 0 15px;
 }
 .container {
   max-width: 1320px;
@@ -208,6 +193,48 @@ input[type="number"] {
   color: var(--clr-neutral-900);
 }
 
+.grid {
+  position: absolute;
+  inset: 0;
+  z-index: -4;
+  pointer-events: none;
+
+  background-image: repeating-linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.05) 0,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 40px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.05) 0,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 40px
+    );
+}
+.glass {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+
+  /* Base glass color */
+  background: rgba(0, 0, 0, 0.2);
+
+  /* Refraction (80) + Frost (31) */
+  backdrop-filter: blur(22px) saturate(135%) contrast(95%);
+  -webkit-backdrop-filter: blur(22px) saturate(135%) contrast(95%);
+
+  /* Stroke (inside, ~20%) */
+  border: 1px solid rgba(255, 255, 255, 0.22);
+
+  /* Depth (20) */
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.25),
+    0 12px 36px rgba(0, 0, 0, 0.45);
+
+  color: var(--clr-primary-100);
+}
 /* === GRID CLASSES === */
 .col-1 {
   width: calc(var(--one-col) * 1);

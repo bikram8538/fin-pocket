@@ -55,7 +55,7 @@
     transparent 95%
   );
 }
-.section-btn{
+.section-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,12 +89,8 @@ h3 {
 /* ===============
 Features
 =============== */
-.features .grid {
-  z-index: -10;
-}
-.feattures span {
-  display: block;
-}
+/* .features .row > div:nth-child(2) */
+
 .feature-description {
   font-size: var(--fs-300);
   font-family: var(--ff-dm-sans);
@@ -129,19 +125,34 @@ Features
 .left-row {
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
+  margin: 0px 12px;
 }
+
 .left-row .top,
 .left-row .mid,
-.left-row .bottom,
+.left-row .bottom {
+  padding: 18px;
+  margin-bottom: 16px;
+}
+.top-left{
+  flex-direction: column;
+}
+.top-left > div{
+  flex: 1;
+}
+.mid-main-wrapper{
+  margin: 0 12px;
+  margin-bottom: 24px;
+}
+
 .left-row .mid-main-wrapper,
 .savings-wrapper,
 .right-row-top,
 .right-row-bottom {
   padding: 18px;
-  border-radius: 22px;
-  border: 1px solid var(--clr-fade-200);
-  margin: 12px;
 }
+
 .left-row .mid figure {
   margin: 0 auto;
 }
@@ -265,7 +276,9 @@ Features
 }
 
 /* ==== savings bottom start ==== */
-
+.savings-wrapper{
+  margin: 24px 0;
+}
 .savings-wrapper-content {
   padding: 16px;
 }
@@ -350,6 +363,7 @@ Features
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
+  margin: 0 12px;
 }
 .right-row > div {
   flex-grow: 1;
@@ -359,6 +373,7 @@ Features
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 24px;
 }
 .right-row-top figure {
   padding: 16px 0;
@@ -426,14 +441,13 @@ Features
 /* ==== right chart bottom end=== */
 
 /* ==== How-it-works Section === */
-.how-it-works .row > div {
-  padding: 0;
+
+.daily-use-wrapper .row {
+  justify-content: center;
+  align-items: stretch;
 }
 .how-it-works .glass {
   background: rgba(240, 237, 237, 0.2);
-}
-.how-it-works .grid {
-  z-index: -52 !important;
 }
 .how-it-works .section-content {
   max-width: 650px;
@@ -455,10 +469,6 @@ Features
   line-height: var(--lh-base);
   text-align: center;
   color: var(--clr-primary-100);
-}
-.daily-use-wrapper .row {
-  justify-content: center;
-  align-items: stretch;
 }
 .daily-use-wrapper .col-4 {
   display: flex;
@@ -536,7 +546,6 @@ Features
 .input-box input:-webkit-autofill:active {
   -webkit-text-fill-color: rgba(255, 255, 255, 1) !important;
   caret-color: rgba(255, 255, 255, 1);
-
   /* Remove white background */
   box-shadow: 0 0 0 1000px transparent inset !important;
   -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
@@ -597,62 +606,54 @@ Features
   height: 100%;
 }
 
-
-
 /* ===== Service Section === */
-
 .section-content {
-	max-width: 827px;
-	margin: 0 auto;
+  max-width: 827px;
+  margin: 0 auto;
 }
 .section-content p {
-	max-width: 80%;
-	margin: 0 auto;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .service-card-wrapper {
-	margin-top: 80px;
+  margin-top: 80px;
 }
-.service-card-wrapper .row {
-	align-items: stretch;
-	justify-content: center;
-}
+
 .service-card-wrapper .row > div {
-	display: flex;
-  padding: 0;
+  display: flex;
 }
 
 .service-card {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: var(--clr-neutral-250);
-	margin: 16px 8px;
-	padding: 20px 10px;
-	border-radius: 20px;
-	border: 1px solid var(--clr-fade-200);
-	box-shadow: 0 4px 4px 0 var(--clr-fade-250);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px 8px;
+  padding: 20px 10px;
+  border-radius: 20px;
+  /* border: 1px solid var(--clr-fade-200); */
+  /* box-shadow: 0 4px 4px 0 var(--clr-fade-250); */
 }
 .service-card figure {
-	border-radius: 20px;
-	border: 1px solid var(--clr-fade-200);
+  border-radius: 20px;
+  border: 1px solid var(--clr-fade-200);
 }
 .service-content {
-	margin-top: 32px;
-	text-align: center;
+  margin-top: 32px;
+  text-align: center;
 }
 .service-content h3 {
-	font-family: var(--ff-stolzl);
-	font-size: var(--fs-350);
-	font-weight: var(--fw-regular);
-	letter-spacing: var(--letter-spacing-300);
-	color: var(--clr-primary-100);
+  font-family: var(--ff-stolzl);
+  font-size: var(--fs-350);
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--letter-spacing-300);
+  color: var(--clr-primary-100);
 }
 .service-content p {
-	font-family: var(--ff-dm-sans);
-	font-size: var(--fs-300);
-	font-weight: var(--fw-regular);
-	color: var(--clr-fade-600);
-	line-height: 1.2;
-	margin-top: 20px;
+  font-family: var(--ff-dm-sans);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-regular);
+  color: var(--clr-fade-600);
+  line-height: 1.2;
+  margin-top: 20px;
 }

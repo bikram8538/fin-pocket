@@ -10,7 +10,7 @@ header {
   padding: 20px 0;
   position: relative;
 }
-.navbar::before,
+/* .navbar::before,
 .navbar::after {
   content: "";
   position: absolute;
@@ -40,7 +40,7 @@ header {
     transparent 75%
   );
   opacity: 0.5;
-}
+} */
 nav {
   display: flex;
   justify-content: space-between;
