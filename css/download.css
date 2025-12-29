@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@font-face {
+  font-family: "stolzl";
+  src: url("../assets/fonts/stolzl/stolzl_regular.otf");
+}
+.download-sec {
+  overflow: hidden;
+}
+.btn-download {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 28px;
+  border: 1px solid var(--clr-primary-100);
+  color: var(--clr-primary-100);   
+  font-family: var(--ff-stolzl);
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-block;
+  background: transparent;
+  transition: color 0.4s ease;
+}
+.btn-download::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #b9fb6a;
+  transform: scaleX(0);
+  transform-origin: center;      
+  transition: transform 0.4s ease;
+  z-index: -1;
+  border-radius: 30px;
+}
+
+.btn-download:hover::before {
+  transform: scaleX(1);
+}
+
+.btn-download:hover {
+  color: #fff;   
+}
+.dowload-cntn {
+  max-width: 679px;
+  margin-top: 50px;
+}
+.dowload-cntn > h4 {
+  font-size: 50px !important;
+  color: var(--clr-primary-100);
+  font-family: var(--ff-stolzl);
+  font-weight: 400;
+}
+.download-para {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+  color: var(--clr-primary-100);
+  margin: 50px 0;
+  max-width: 648px;
+  text-align: center;
+}
+.download-img {
+  max-width: 424px;
+  display: flex;
+  justify-content: space-between;
+}
+.left-download {
+  width: 200px;
+}
+.left-download > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.right-download {
+  width: 200px;
+}
+.right-download > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.mobile-img {
+  width: 227px;
+}
+.mobile-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .dowload-cntn h4 {
+    font-size: 42px;
+  }
+
+  .download-para {
+    font-size: 20px;
+  }
+
+  .mobile-img {
+    width: 200px;
+  }
+}
+@media (max-width: 992px) {
+  .download-sec{
+    padding: 40px 0;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col-9,
+  .col-3 {
+    width: 100%;
+  }
+
+  .mobile-img {
+    margin: 50px auto 0;
+  }
+  .download-btn {
+    text-align: center;
+  }
+  .dowload-cntn {
+    margin: 50px auto 0;
+    text-align: center;
+  }
+  .download-para {
+    text-align: center;
+    margin: 50px auto 50px;
+  }
+  .download-img {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .dowload-cntn > h4 {
+    font-size: 37px !important;
+    color: var(--clr-primary-100);
+    font-family: var(--ff-stolzl);
+    font-weight: 400;
+  }
+  .download-para {
+    text-align: center;
+    margin: 30px auto 30px;
+  }
+  .download-para {
+    font-size: 18px;
+  }
+  .dowload-cntn {
+    margin: 24px auto 0;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .left-download {
+    width: 110px;
+  }
+  .right-download {
+    width: 110px;
+  }
+  .download-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 0 auto;
+  }
+  .download-para {
+    font-size: 13px;
+  }
+  .dowload-cntn > h4 {
+    font-size: 28px !important;
+    color: var(--clr-primary-100);
+    font-family: var(--ff-stolzl);
+    font-weight: 400;
+  }
+  .btn-download {
+    padding: 8px;
+    border: 1px solid var(--clr-primary-100);
+    color: var(--clr-primary-100);
+    font-family: var(--ff-stolzl);
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .mobile-img {
+    width: 130px;
+  }
+}

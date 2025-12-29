@@ -190,7 +190,7 @@ body {
   padding: 0;
 }
 
-.footer-col ul li {
+.footer-col ul li >a{
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 12px;
