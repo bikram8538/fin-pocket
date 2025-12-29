@@ -21,9 +21,9 @@
   color: var(--clr-fade-600);
 }
 .sec-sub-heading {
-  font-family: var(--ff-stolzl);
-  font-size: var(--fs-300);
-  font-weight: var(--fw-regular);
+  font-family: var(--ff-stolzl) !important;
+  font-size: var(--fs-300) !important;
+  font-weight: var(--fw-regular) !important;
   color: var(--clr-primary-100);
 
   width: max-content;
@@ -740,15 +740,13 @@ Features
 	width: 100%;
 }
 .workflow-content .sec-sub-heading {
-	background: transparent;
 	border-color: var(--clr-primary-900);
   color: var(--clr-primary-900);
 	margin-bottom: 0;
   box-shadow: none;
+  border: 1.5px solid var(--clr-primary-900);
 }
-.workflow-content .sec-sub-heading::before{
-  content: none;
-}
+
 .workflow-content h2 {
 	text-align: left;
 	margin-top: 30px;
@@ -785,8 +783,10 @@ Features
 	-webkit-backdrop-filter: blur(18px) saturate(180%);
 
 	/* Dispersion + Depth + Refraction simulation */
-	box-shadow: 0 4px 42px var(--clr-fade-200), /* Depth */ inset 0 0 0.8px rgba(255, 255, 255, 0.5),
-		/* Refraction */ inset 0 0 20px rgba(255, 255, 255, 0.15); /* Dispersion (inner lighting) */
+	box-shadow: 0 4px 42px var(--clr-fade-250), 
+  /* Depth */ inset 0 0 0.8px rgba(255, 255, 255, 0.5),
+	/* Refraction */ inset 0 0 20px rgba(255, 255, 255, 0.15);
+  /* Dispersion (inner lighting) */
 
 	border-radius: 20px;
 	height: fit-content;
