@@ -726,10 +726,9 @@ Features
 
 
 
-
 /* ======== workflow start ======== */
 .workflow {
-	background: var(--clr-primary-fade-900);
+	background: var(--clr-primary-fade-900) !important;
 }
 
 .workflow-content {
@@ -742,11 +741,12 @@ Features
 .workflow-content .sec-sub-heading {
 	border-color: var(--clr-primary-900);
   color: var(--clr-primary-900);
-	margin-bottom: 0;
   box-shadow: none;
-  border: 1.5px solid var(--clr-primary-900);
+  border-width: 1.5px;
 }
-
+.workflow-content .sec-sub-heading::before{
+  content: none;
+}
 .workflow-content h2 {
 	text-align: left;
 	margin-top: 30px;
@@ -767,7 +767,6 @@ Features
 }
 .workflow-content div:nth-child(n + 2) {
 	margin-top: 32px;
-	max-width: 85%;
 }
 /* =========== workflow-cards start =========== */
 .workflow-steps {
@@ -782,66 +781,47 @@ Features
 	backdrop-filter: blur(18px) saturate(180%);
 	-webkit-backdrop-filter: blur(18px) saturate(180%);
 
-	/* Dispersion + Depth + Refraction simulation */
-	box-shadow: 0 4px 42px var(--clr-fade-250), 
-  /* Depth */ inset 0 0 0.8px rgba(255, 255, 255, 0.5),
-	/* Refraction */ inset 0 0 20px rgba(255, 255, 255, 0.15);
-  /* Dispersion (inner lighting) */
+	box-shadow: 0 4px 42px var(--clr-fade-250),
+  inset 0 0 0.8px rgba(255, 255, 255, 0.5),
+	inset 0 0 20px rgba(255, 255, 255, 0.15);
 
 	border-radius: 20px;
-	height: fit-content;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: flex-start;
-	padding: 1% 16%;
-	max-width: 827px;
+	max-width: 650px;
 	width: 100%;
-	margin: 0 auto;
-}
-.step {
-	margin-left: 32px;
-	margin-top: 32px;
-	margin-bottom: 32px;
-	padding-left: 16px;
-	position: relative;
+  min-height: 650px;
+  padding: 30px;
 }
 
-.step h3 {
+
+.steps-cards > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.steps-cards h3 {
 	font-family: var(--ff-stolzl);
 	color: var(--clr-neutral-100);
 	font-weight: var(--fw-regular);
 }
-.step p {
+.steps-cards p {
 	font-family: var(--ff-dm-sans);
 	font-weight: var(--fw-regular);
 	color: var(--clr-neutral-100);
 	font-size: var(--fs-300);
-	margin-top: 16px;
+	margin-top: 14px;
 }
-.steps-cards .step::before {
-	content: '';
-	position: absolute;
-	top: -15%;
-	right: 100%;
-	width: 30px;
-	height: 30px;
-	padding: 28px;
-	border-radius: 44px;
+.steps-cards figure{
+  padding: 25px;
+  background: var(--clr-primary-900);
+  border-radius: 50%;
+  margin-right: 24px;
 }
-.steps-cards div:nth-child(1)::before {
-	background: url(../assets/workflow/signup.svg) var(--clr-primary-900) center no-repeat;
-}
-.steps-cards div:nth-child(2)::before {
-	background: url(../assets/workflow/album.svg) var(--clr-primary-900) center no-repeat;
-}
-.steps-cards div:nth-child(3)::before {
-	background: url(../assets/workflow/analyze.svg) var(--clr-primary-900) center no-repeat;
-}
-.steps-cards div:nth-child(4)::before {
-	background: url(../assets/workflow/transact.svg) var(--clr-primary-900) center no-repeat;
-}
-.steps-cards div:nth-child(5)::before {
-	background: url(../assets/workflow/optimize.svg) var(--clr-primary-900) center no-repeat;
+.steps-cards figure img{
+  height: 30px;
+  width: 30px;
 }
 /* ======== workflow end ======== */
