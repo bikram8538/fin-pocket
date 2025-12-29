@@ -4,11 +4,7 @@
   font-family: "stolzl";
   src: url("../assets/fonts/stolzl/stolzl_regular.otf");
 }
-
 :root {
-  /*100 light → 900 dark */
-
-  /* ===== Primary */
   --clr-primary-100: #ffffff;
   --clr-primary-200: #b9fb6a;
   --clr-primary-650: #82e40c;
@@ -16,62 +12,55 @@
   --clr-primary-800: #0f0f0f;
   --clr-primary-900: #000000;
 
-  /* ===== Neutral */
   --clr-neutral-300: #bcbec0;
   --clr-neutral-700: #33774c;
   --clr-neutral-800: #404040;
 
-  /* ===== Accent */
   --clr-accent-100: #f4f5f3;
   --clr-accent-300: #eda333;
   --clr-accent-700: #858b7c;
-  /* ==== Fade */
+
   --clr-fade-200: rgba(255, 255, 255, 0.2);
   --clr-fade-250: rgba(0, 0, 0, 0.25);
+  --clr-fade-400: rgba(255, 255, 255, 0.4);
+  --clr-fade-500: rgba(255, 255, 255, 0.5);
   --clr-fade-600: rgba(255, 255, 255, 0.6);
   --clr-fade-700: rgba(255, 255, 255, 0.7);
   --clr-primary-fade-900: rgba(185, 251, 106, 0.9);
 
 
-  /* ==== Some Others */
   --clr-green-300: #b7ffcb;
   --clr-red-300: #ffb4aa;
   --clr-yellow-300: #fade8b;
   --clr-blue-300: #708afe;
   --clr-green-900: #005016;
-  /* ===== Gradient */
+
   --gradient-primary: linear-gradient(90deg, #3cc5d7, #47d794);
   --gradient-secondary: linear-gradient(90deg, #82e40c, #b9fb6a);
 
-  /* ===== Font Family */
   --ff-stolzl: "stolzl", sans-serif;
   --ff-dm-sans: "DM Sans", sans-serif;
 
-  /* ===== Font Sizes (px scale)*/
-  --fs-100: 12px; /* caption */
-  --fs-200: 14px; /* small text */
+  --fs-100: 12px;
+  --fs-200: 14px;
   --fs-250: 16px;
-  --fs-300: 18px; /* body */
-  --fs-350: 20px; /* h3 */
-  --fs-400: 24px; /* banner-content p */
+  --fs-300: 18px;
+  --fs-350: 20px;
+  --fs-400: 24px;
   --fs-450: 30px;
-  --fs-500: 45px; /* h2 */
-  --fs-900: 56px; /* h1 */
+  --fs-500: 45px;
+  --fs-900: 56px;
 
-  /* ===== Font Weight */
   --fw-light: 300;
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-semibold: 600;
   --fw-bold: 700;
 
-  /* ===== Line Height */
   --lh-base: 28px;
 
-  /* ===== Letter Spacing */
   --letter-spacing-300: -0.03em;
 
-  /* GRID SYSTEM */
   --one-col: calc(100% / 12);
 }
 
