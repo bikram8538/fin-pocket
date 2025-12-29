@@ -190,7 +190,7 @@ body {
   padding: 0;
 }
 
-.footer-col ul li >a{
+.footer-col ul li > a {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 12px;
@@ -247,11 +247,7 @@ body {
   transform: scale(1.05);
 }
 /* media Query */
-/* =========================
-   RESPONSIVE BREAKPOINTS
-========================= */
 
-/* ---------- Large Desktop (1200px and below) ---------- */
 @media (max-width: 1200px) {
   .footer-row {
     grid-template-columns: 2fr 1fr 1fr 1fr;
@@ -263,9 +259,8 @@ body {
   }
 }
 
-/* ============================= */
 /*  Tablet Landscape ≤ 992px */
-/* ============================= */
+
 @media (max-width: 992px) {
   .footer-row {
     grid-template-columns: repeat(3, 1fr);
@@ -295,9 +290,8 @@ body {
   }
 }
 
-/* ============================= */
 /*  Tablet / Large Mobile ≤ 768px */
-/* ============================= */
+
 @media (max-width: 768px) {
   .footer-sec {
     padding: 50px 0;
@@ -325,9 +319,8 @@ body {
   }
 }
 
-/* ============================= */
 /*  Mobile ≤ 576px */
-/* ============================= */
+
 @media (max-width: 576px) {
   .footer-sec {
     padding: 21px 0;
@@ -370,9 +363,8 @@ body {
   }
 }
 
-/* ============================= */
 /*  Small Mobile ≤ 360px */
-/* ============================= */
+
 @media (max-width: 360px) {
   .footer-text {
     font-size: 14px;
