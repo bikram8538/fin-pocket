@@ -195,7 +195,6 @@ body {
   font-weight: 400;
   margin-bottom: 12px;
   color: var(--footer-text);
-  cursor: pointer;
 }
 
 .footer-col ul li:hover {
