@@ -8,15 +8,38 @@
   overflow: hidden;
 }
 .btn-download {
-  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  padding: 10px 28px;
   border: 1px solid var(--clr-primary-100);
-  color: var(--clr-primary-100);
+  color: var(--clr-primary-100);   
   font-family: var(--ff-stolzl);
   font-size: 20px;
   font-weight: 400;
   border-radius: 30px;
   cursor: pointer;
   display: inline-block;
+  background: transparent;
+  transition: color 0.4s ease;
+}
+.btn-download::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #b9fb6a;
+  transform: scaleX(0);
+  transform-origin: center;      
+  transition: transform 0.4s ease;
+  z-index: -1;
+  border-radius: 30px;
+}
+
+.btn-download:hover::before {
+  transform: scaleX(1);
+}
+
+.btn-download:hover {
+  color: #fff;   
 }
 .dowload-cntn {
   max-width: 679px;
@@ -66,30 +89,7 @@
   height: 100%;
   object-fit: cover;
 }
-/* Media Query */
-/* @media screen and (max-width:1200px) {
-  .dowload-cntn > h4 {
-    font-size: 44px !important;
-    color: var(--clr-primary-100);
-    font-family: var(--ff-stolzl);
-    font-weight: 400;
-}
-}
-@media screen  and (max-width:992px){
-  .col-9 {
-    width: 100%;
-    margin: 0 auto;
-}
-.col-3{
-  width: 100%;
-}
-.download-btn{
-  text-align: center;
-}
-.dowload-cntn{
-  margin: 0 auto;
-}
-} */
+
 @media (max-width: 1200px) {
   .dowload-cntn h4 {
     font-size: 42px;
