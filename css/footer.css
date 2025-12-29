@@ -195,7 +195,6 @@ body {
   font-weight: 400;
   margin-bottom: 12px;
   color: var(--footer-text);
-  cursor: pointer;
 }
 
 .footer-col ul li:hover {
@@ -217,7 +216,6 @@ body {
   font-weight: 400;
   color: var(--footer-text);
 }
-/* ===== Footer Link Hover ===== */
 .footer-col ul li {
   position: relative;
   transition: all 0.3s ease;
