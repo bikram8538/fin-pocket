@@ -9,14 +9,30 @@
   .right-row > div {
     flex-grow: 1;
   }
+  .expenses-table table {
+    min-width: 900px; /* prevents column squish */
+  }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .savings-wrapper-inner > div {
     max-width: 320px;
   }
+   /* variable expenses */
+  .table-header > .btn{
+    margin-top: 20px;
+  }
+
+  
+  .expenses-cta {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .expenses-cta> .btn-secondary{
+    margin-right: 20px;
+  }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .buddget-planner-left{
     display: none;
   }
@@ -26,5 +42,10 @@
   .buddget-planner-right figure{
     padding: 30px;
     border-radius: 35px;
+  }
+  /* summary cards */
+  .row .summary-card{
+    height: auto;
+    margin-bottom: 20px;
   }
 }
