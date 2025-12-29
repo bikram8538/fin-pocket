@@ -729,35 +729,42 @@ Features
 
 /* ======== workflow start ======== */
 .workflow {
-	background: var(--clr-primary-550);
+	background: var(--clr-primary-fade-900);
 }
 
 .workflow-content {
 	max-width: 827px;
 	margin: 0 auto;
-	color: var(--clr-neutral-100);
 }
 .workflow-content .section-content {
 	width: 100%;
 }
 .workflow-content .sec-sub-heading {
 	background: transparent;
-	border-color: var(--clr-neutral-100);
+	border-color: var(--clr-primary-900);
+  color: var(--clr-primary-900);
 	margin-bottom: 0;
+  box-shadow: none;
+}
+.workflow-content .sec-sub-heading::before{
+  content: none;
 }
 .workflow-content h2 {
 	text-align: left;
 	margin-top: 30px;
+  color: var(--clr-primary-900);
+  font-weight: var(--fw-regular);
 }
 .workflow-content h3 {
-	color: var(--clr-neutral-100);
+	color: var(--clr-primary-900);
+  font-weight: var(--fw-semibold);
 }
 .workflow-content p {
 	max-width: 100%;
 	margin-left: 0;
-	font-size: var(550);
+	font-size: var(--fs-300);
 	font-family: var(--ff-dm-sans);
-	line-height: var(--lh-150);
+	line-height: var(--lh-base);
 	margin-top: 30px;
 }
 .workflow-content div:nth-child(n + 2) {
@@ -766,7 +773,6 @@ Features
 }
 /* =========== workflow-cards start =========== */
 .workflow-steps {
-	/* height: 100%; */
 	margin-top: 32px;
 	display: flex;
 	justify-content: center;
@@ -774,7 +780,7 @@ Features
 	width: 100%;
 }
 .steps-cards {
-	background: rgba(255, 255, 255, 0.12); /* 80% light translated */
+	background: var(--clr-primary-100);
 	backdrop-filter: blur(18px) saturate(180%);
 	-webkit-backdrop-filter: blur(18px) saturate(180%);
 
@@ -802,7 +808,6 @@ Features
 }
 
 .step h3 {
-	font-size: var(--fs-550);
 	font-family: var(--ff-stolzl);
 	color: var(--clr-neutral-100);
 	font-weight: var(--fw-regular);
@@ -811,7 +816,7 @@ Features
 	font-family: var(--ff-dm-sans);
 	font-weight: var(--fw-regular);
 	color: var(--clr-neutral-100);
-	font-size: var(--fs-500);
+	font-size: var(--fs-300);
 	margin-top: 16px;
 }
 .steps-cards .step::before {
@@ -825,18 +830,18 @@ Features
 	border-radius: 44px;
 }
 .steps-cards div:nth-child(1)::before {
-	background: url(../assets/workflow/signup.svg) var(--clr-primary-460) center no-repeat;
+	background: url(../assets/workflow/signup.svg) var(--clr-primary-900) center no-repeat;
 }
 .steps-cards div:nth-child(2)::before {
-	background: url(../assets/workflow/album.svg) var(--clr-primary-460) center no-repeat;
+	background: url(../assets/workflow/album.svg) var(--clr-primary-900) center no-repeat;
 }
 .steps-cards div:nth-child(3)::before {
-	background: url(../assets/workflow/analyze.svg) var(--clr-primary-460) center no-repeat;
+	background: url(../assets/workflow/analyze.svg) var(--clr-primary-900) center no-repeat;
 }
 .steps-cards div:nth-child(4)::before {
-	background: url(../assets/workflow/transact.svg) var(--clr-primary-460) center no-repeat;
+	background: url(../assets/workflow/transact.svg) var(--clr-primary-900) center no-repeat;
 }
 .steps-cards div:nth-child(5)::before {
-	background: url(../assets/workflow/optimize.svg) var(--clr-primary-460) center no-repeat;
+	background: url(../assets/workflow/optimize.svg) var(--clr-primary-900) center no-repeat;
 }
 /* ======== workflow end ======== */

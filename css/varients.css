@@ -29,6 +29,8 @@
   --clr-fade-200: rgba(255, 255, 255, 0.2);
   --clr-fade-600: rgba(255, 255, 255, 0.6);
   --clr-fade-700: rgba(255, 255, 255, 0.7);
+  --clr-primary-fade-900: rgba(185, 251, 106, 0.9);
+
 
   /* ==== Some Others */
   --clr-green-300: #b7ffcb;
