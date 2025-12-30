@@ -12,7 +12,7 @@
   overflow: hidden;
   padding: 10px 28px;
   border: 1px solid var(--clr-primary-100);
-  color: var(--clr-primary-100);   
+  color: var(--clr-primary-100);
   font-family: var(--ff-stolzl);
   font-size: 20px;
   font-weight: 400;
@@ -28,7 +28,7 @@
   inset: 0;
   background: #b9fb6a;
   transform: scaleX(0);
-  transform-origin: center;      
+  transform-origin: center;
   transition: transform 0.4s ease;
   z-index: -1;
   border-radius: 30px;
@@ -39,7 +39,7 @@
 }
 
 .btn-download:hover {
-  color: #fff;   
+  color: #fff;
 }
 .dowload-cntn {
   max-width: 679px;
@@ -89,8 +89,98 @@
   height: 100%;
   object-fit: cover;
 }
+/* FAQ Section */
+.btn-faq {
+  margin-bottom: 60px;
+}
+.faq-cntn {
+  margin-bottom: 50px;
+  max-width: 657px;
+}
+.faq-cntn > h4 {
+  font-size: 45px;
+  font-weight: 400;
+  font-family: var(--ff-stolzl);
+  color: var(--clr-primary-100);
+}
+.faq-para {
+  max-width: 536px;
+}
+.faq-para > p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+  color: var(--clr-primary-100);
+}
+/* Accordian-section */
+.accordian-row {
+  align-items: stretch;
+}
+.accordian-img {
+  width: 648px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.accordian-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.accordion-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.accordion-item {
+  background: linear-gradient(90deg, #1f4d3a, #123528);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  padding: 16px 20px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  background: var(--clr-primary-100);
+  color: black;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 0 20px;
+  transition: all 0.4s ease;
+}
+
+.accordion-item.active .accordion-body {
+  max-height: 140px;
+  padding: 14px 20px;
+}
+
+.icon {
+  font-size: 22px;
+  color: #9cffc2;
+}
+/* Media QUERY */
+@media (max-width: 1300px) {
+  /* Accodian-section */
+  .accordian-img {
+    width: 487px;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+}
 @media (max-width: 1200px) {
+  /* Download-sec */
   .dowload-cntn h4 {
     font-size: 42px;
   }
@@ -104,7 +194,8 @@
   }
 }
 @media (max-width: 992px) {
-  .download-sec{
+  /* Download-sec */
+  .download-sec {
     padding: 40px 0;
   }
   .row {
@@ -134,8 +225,33 @@
   .download-img {
     margin: 0 auto;
   }
+  /* FAQ-Section */
+  .faq-cntn {
+    margin: 0 auto 50px;
+    max-width: 657px;
+    text-align: center;
+  }
+  .faq-para {
+    max-width: 536px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /* Accordian-section */
+  .accordian-sec{
+    padding: 40px 0 40px;
+  }
+  .col-6 {
+    width: 100%;
+  }
+  .accordian-img {
+    width: 487px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 0px auto 31px;
+  }
 }
 @media (max-width: 768px) {
+  /* Download-sec */
   .dowload-cntn > h4 {
     font-size: 37px !important;
     color: var(--clr-primary-100);
@@ -153,8 +269,24 @@
     margin: 24px auto 0;
     text-align: center;
   }
+  /* FAQ-Section */
+  .faq-sec {
+    padding: 37px 0 46px;
+  }
+  .faq-cntn > h4 {
+    font-size: 28px;
+    font-weight: 400;
+    font-family: var(--ff-stolzl);
+    color: var(--clr-primary-100);
+  }
+  .faq-cntn {
+    margin: 0px auto 31px;
+    max-width: 657px;
+    text-align: center;
+  }
 }
 @media (max-width: 576px) {
+  /* Download-sec */
   .left-download {
     width: 110px;
   }
@@ -190,5 +322,33 @@
   }
   .mobile-img {
     width: 130px;
+  }
+}
+@media (max-width: 420px) {
+  /* Accordian-section */
+  .accordian-img {
+    width: 289px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 0px auto 31px;
+  }
+  .accordion-header {
+    padding: 8px 10px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    background: var(--clr-primary-100);
+    color: black;
+    font-size: 11px;
+    line-height: 1.6;
+    padding: 0 20px;
+    transition: all 0.4s ease;
   }
 }
