@@ -144,18 +144,19 @@
   color: #fff;
   font-size: 15px;
   cursor: pointer;
-
+  font-family: "DM Sans", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .accordion-body {
+  font-family: "DM Sans", sans-serif;
   max-height: 0;
   overflow: hidden;
   background: var(--clr-primary-100);
   color: black;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.6;
   padding: 0 20px;
   transition: all 0.4s ease;
@@ -237,7 +238,7 @@
     text-align: center;
   }
   /* Accordian-section */
-  .accordian-sec{
+  .accordian-sec {
     padding: 40px 0 40px;
   }
   .col-6 {
@@ -346,7 +347,7 @@
     overflow: hidden;
     background: var(--clr-primary-100);
     color: black;
-    font-size: 11px;
+    font-size: 10px;
     line-height: 1.6;
     padding: 0 20px;
     transition: all 0.4s ease;
