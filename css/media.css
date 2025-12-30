@@ -31,6 +31,26 @@
   .expenses-cta> .btn-secondary{
     margin-right: 20px;
   }
+
+  .pricing-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .reassurance-item {
+    flex-direction: column;
+  }
+  .reassurance-item span {
+    margin: 0 0 16px 0;
+  }
+  .reassurance-item img {
+    max-width: 30px;
+  }
+  .pricing-cards {
+    grid-template-columns: 1fr;
+  }
 }
 @media screen and (max-width: 768px) {
   .buddget-planner-left{
