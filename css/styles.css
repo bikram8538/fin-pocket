@@ -1155,3 +1155,8 @@ td {
 }
 /* ======== about-us end ======== */
 
+/* ======== Download section */
+.download-sec .sec-sub-heading{
+  width: fit-content;
+  margin-left: 0;
+}
