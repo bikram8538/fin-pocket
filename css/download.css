@@ -140,30 +140,30 @@
 }
 
 .accordion-item {
-  background: linear-gradient(90deg, #1f4d3a, #123528);
+  background: linear-gradient(to right, rgba(60, 197, 215, 0.3) 0%, rgba(71, 215, 148, 0.5) 100%);
   border-radius: 14px;
   overflow: hidden;
 }
 
 .accordion-header {
-  padding: 16px 20px;
-  color: #fff;
-  font-size: 15px;
+  padding: 16.5px;
+  color: var(--clr-primary-100);
+  font-size: var(--fs-350);
   cursor: pointer;
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--ff-dm-sans);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .accordion-body {
-  font-family: "DM Sans", sans-serif;
+    font-family: var(--ff-dm-sans);
   max-height: 0;
   overflow: hidden;
   background: var(--clr-primary-100);
-  color: black;
-  font-size: 18px;
-  line-height: 1.6;
+  color: var(--clr-primary-900);
+  font-size: var(--fs-300);
+  line-height: var(--lh-base);
   padding: 0 20px;
   transition: all 0.4s ease;
 }
@@ -174,7 +174,7 @@
 }
 
 .icon {
-  font-size: 22px;
+  font-size: 30px;
   color: #9cffc2;
 }
 /* slider-section */
@@ -208,7 +208,7 @@
 
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-radius: 30px;
+  border-radius: 10px;
   padding: 20px 20px 30px;
   color: var(--clr-primary-100);
 }
