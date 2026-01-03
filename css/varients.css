@@ -177,14 +177,6 @@ input[type="number"] {
   border-color: var(--clr-primary-900);
 }
 
-.btn-tertiary {
-  color: var(--clr-neutral-900);
-  border: 1px solid var(--clr-primary-300);
-}
-.btn-tertiary:hover {
-  background: var(--clr-neutral-300);
-  color: var(--clr-neutral-900);
-}
 /* ==== SECTION CONTENT ====== */
 
 .sec-heading {

@@ -262,7 +262,13 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
   }
-
+  .footer-col{
+    text-align: center;
+  }
+  .social-img{
+    margin: 0 auto;
+    max-width: fit-content;
+  }
   .footer-col-logo {
     grid-column: span 3;
     text-align: center;

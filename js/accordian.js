@@ -4,7 +4,7 @@
 
   // height sync
   function syncHeight() {
-    wrapper.style.height = img.offsetHeight + "px";
+    // wrapper.style.height = img.offsetHeight + "px";
   }
   window.addEventListener("load", syncHeight);
   window.addEventListener("resize", syncHeight);

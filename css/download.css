@@ -9,9 +9,9 @@
 }
 .download-sec {
   overflow: hidden;
-  background: linear-gradient(to bottom, #040502 0%, #6E953F 76%);
+  background: linear-gradient(to bottom, #040502 0%, #6e953f 76%);
 }
-.download-sec .section-badge{
+.download-sec .section-badge {
   margin-left: 0;
 }
 .dowload-cntn {
@@ -90,33 +90,35 @@
   color: var(--clr-primary-100);
 }
 /* Accordian-section */
-.accordian-sec .section-content{
+.accordian-sec .section-content {
   max-width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 80px;
 }
-.accordian-sec .section-content .accordian-content{
+/* ================================== Rsponsiv checking */
+.accordian-sec .section-content .accordian-content {
   max-width: 657px;
+  width: 100%;
 }
-.accordian-sec .section-content .section-badge{
-  margin-left: 0;
+.accordian-sec .section-content .section-badge {
+  margin: auto 0 auto 0;
 }
-.accordian-sec .section-content .accordian-content .sec-heading{
+.accordian-sec .section-content .accordian-content .sec-heading {
   text-align: left;
   margin-left: 0;
 }
-.accordian-sec .section-content .accordian-content .sec-description{
+.accordian-sec .section-content .accordian-content .sec-description {
   text-align: left;
   margin-left: 0;
 }
-.accordian-sec .section-content h2{
+.accordian-sec .section-content h2 {
   margin-left: 0;
 }
-.accordian-sec .section-content .section-btn{
+.accordian-sec .section-content .section-btn {
   max-width: fit-content;
 }
-.accordian-sec .section-content .section-btn .btn{
+.accordian-sec .section-content .section-btn .btn {
   white-space: nowrap;
 }
 .accordian-row {
@@ -133,14 +135,18 @@
   object-fit: cover;
 }
 .accordion-wrapper {
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .accordion-item {
-  background: linear-gradient(to right, rgba(60, 197, 215, 0.3) 0%, rgba(71, 215, 148, 0.5) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(60, 197, 215, 0.3) 0%,
+    rgba(71, 215, 148, 0.5) 100%
+  );
   border-radius: 14px;
   overflow: hidden;
 }
@@ -157,7 +163,7 @@
 }
 
 .accordion-body {
-    font-family: var(--ff-dm-sans);
+  font-family: var(--ff-dm-sans);
   max-height: 0;
   overflow: hidden;
   background: var(--clr-primary-100);
@@ -184,7 +190,7 @@
 .testimonial-sec {
   background: url(../assets/slider/slider-background.png) no-repeat center/cover;
 }
-.testimonial-sec .section-badge{
+.testimonial-sec .section-badge {
   box-shadow: none;
   backdrop-filter: none;
 }
@@ -310,7 +316,10 @@
     width: 200px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
+  .accordion-item{
+    margin: 16px 0;
+  }
   /* Download-sec */
   .download-sec {
     padding: 40px 0;
@@ -329,7 +338,6 @@
     margin: 50px auto 0;
   }
 
-  
   .dowload-cntn {
     margin: 50px auto 0;
     text-align: center;
@@ -367,6 +375,31 @@
   }
 }
 @media (max-width: 768px) {
+  .accordian-sec .section-content {
+    flex-direction: column !important;
+    margin: 0 auto;
+  }
+  .accordian-sec .section-content .accordian-content {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  .accordian-sec .section-content .section-badge {
+    margin: 0 auto;
+  }
+  .accordian-sec .section-content .accordian-content .sec-heading {
+    text-align: center !important;
+  }
+  .accordian-sec .section-content .accordian-content .sec-description {
+    text-align: center !important;
+    margin: 0 auto;
+  }
+  .accordian-sec .section-content .section-btn {
+    max-width: fit-content;
+    margin: 32px auto;
+  }
+  .download-sec .section-badge {
+   margin: 0 auto;
+}
   /* Download-sec */
   .dowload-cntn > h4 {
     font-size: 37px !important;
@@ -407,6 +440,7 @@
 }
 @media (max-width: 576px) {
   /* Download-sec */
+  
   .left-download {
     width: 110px;
   }

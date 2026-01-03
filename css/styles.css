@@ -7,7 +7,7 @@ body{
   font-family: var(--ff-stolzl);
   font-size: var(--fs-500);
   color: var(--clr-primary-100);
-  letter-spacing: var(--letter-spacing-200);
+  letter-spacing: var(--letter-spacing-300);
   text-align: center;
   margin: 48px 0;
 }
@@ -615,7 +615,6 @@ Features
   margin: 0 auto;
 }
 .section-content p {
-  max-width: 80%;
   margin: 0 auto;
 }
 

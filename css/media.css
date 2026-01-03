@@ -14,7 +14,7 @@
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .savings-wrapper-inner > div {
     max-width: 320px;
   }
@@ -37,22 +37,7 @@
   }
 
 }
-
-@media screen and (max-width: 576px) {
-  .reassurance-item {
-    flex-direction: column;
-  }
-  .reassurance-item span {
-    margin: 0 0 16px 0;
-  }
-  .reassurance-item img {
-    max-width: 30px;
-  }
-  .pricing-cards {
-    grid-template-columns: 1fr;
-  }
-}
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .buddget-planner-left{
     display: none;
   }
@@ -67,5 +52,20 @@
   .row .summary-card{
     height: auto;
     margin-bottom: 20px;
+  }
+  
+}
+@media screen and (max-width: 576px) {
+  .reassurance-item {
+    flex-direction: column;
+  }
+  .reassurance-item span {
+    margin: 0 0 16px 0;
+  }
+  .reassurance-item img {
+    max-width: 30px;
+  }
+  .pricing-cards {
+    grid-template-columns: 1fr;
   }
 }
