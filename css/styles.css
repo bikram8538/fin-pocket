@@ -1154,7 +1154,11 @@ td {
 }
 /* ======== about-us end ======== */
 
-/* ======== Pricing Plan Start ======== */
+/* ======== Download section */
+.download-sec .sec-sub-heading{
+  width: fit-content;
+  margin-left: 0;
+}/* ======== Pricing Plan Start ======== */
 
 .pricing .section-content {
   max-width: 100%;
