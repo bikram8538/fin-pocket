@@ -828,9 +828,13 @@ Features
 /* ======== workflow end ======== */
 
 /* ===== Expenses Section ===== */
+
 .expenses-section {
   position: relative;
   color: var(--clr-primary-100);
+}
+.expenses-section::before, .expenses-section::after{
+width: 50%;
 }
 .expenses-section .section-content {
   max-width: 100%;
@@ -881,7 +885,9 @@ Features
   margin-bottom: 50px;
   font-family: var(--ff-dm-sans);
 }
-
+.expenses-section .section-badge{
+  margin-left: 0;
+}
 .summary-card {
   padding: 30px;
 }
