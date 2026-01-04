@@ -93,7 +93,9 @@ h3 {
 Features
 =============== */
 /* .features .row > div:nth-child(2) */
-
+.features{
+  padding-top: 0px;
+}
 .feature-description {
   font-size: var(--fs-300);
   font-family: var(--ff-dm-sans);
