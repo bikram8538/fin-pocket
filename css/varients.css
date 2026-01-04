@@ -59,6 +59,8 @@
   --fw-bold: 700;
 
   --lh-base: 28px;
+  --lh-125: 1.25;
+  --lh-155: 1.55;
 
   --letter-spacing-300: -0.03em;
 
@@ -290,11 +292,17 @@ h3 {
 .col-1 {
   width: calc(var(--one-col) * 1);
 }
+.col-1-5 {
+  width: calc(var(--one-col) * 1.5);
+}
 .col-2 {
   width: calc(var(--one-col) * 2);
 }
 .col-3 {
   width: calc(var(--one-col) * 3);
+}
+.col-3-5 {
+  width: calc(var(--one-col) * 3.5);
 }
 .col-4 {
   width: calc(var(--one-col) * 4);
@@ -363,7 +371,7 @@ h3 {
   }
 }
 /* Tablet Landscape Responsive */
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   :root {
     --fs-100: 11px;
     --fs-200: 13px;

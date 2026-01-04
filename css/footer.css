@@ -1,42 +1,25 @@
-/* footer-sction */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-:root {
-  --primary-color: #0473ff;
-  --secondary-color: #000000;
-  --border: #656c65;
-  --footer-color: #dceefa;
-  --footer-text: #ffffff;
-}
 
-html,
-body {
-  overflow-x: hidden;
-  width: 100%;
-}
-.footer-sec {
-  padding: 60px 0 60px;
-  font-family: "DM Sans", sans-serif;
+/* ============== Footer start */
+
+footer {
+  padding: 60px 0;
+  font-family: var(--ff-dm-sans);
   position: relative;
   overflow: hidden;
 }
 
-.footer-sec::before,
-.footer-sec::after {
+footer::before,
+footer::after {
   content: "";
   position: absolute;
   top: 0;
-  width: 40%;
+  width: 50%;
   height: 100%;
   pointer-events: none;
   z-index: 3;
 }
 
-.footer-sec::before {
+footer::before {
   left: 0;
   background: radial-gradient(
     circle at left center,
@@ -45,7 +28,7 @@ body {
   );
 }
 
-.footer-sec::after {
+footer::after {
   right: 0;
   background: radial-gradient(
     circle at right center,
@@ -54,29 +37,24 @@ body {
   );
 }
 
-.footer-row {
-  display: grid;
-  grid-template-columns: 2.2fr 1fr 1fr 1fr 1.2fr;
-  gap: 60px;
-}
-
 /* Logo Column */
 .footer-logo {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 20px;
 }
 
 .footer-logo img {
-  width: 73px;
+  max-width: 80px;
+  width: 100%;
 }
 
 .footer-text {
-  font-size: 18px;
-  font-weight: 400;
-  margin: 40px 0 40px;
-  color: var(--footer-text);
+  font-family: var(--ff-dm-sans);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-regular);
+  margin: 40px 0;
+  color: var(--clr-primary-100);
 }
 
 /* Newsletter */
@@ -159,42 +137,39 @@ body {
 /* ===== HOVER STATE ===== */
 .newsletter-form button:hover {
   background: transparent !important;
-  color: #82e40c !important;
-  border: 1px solid #82e40c;
+  color: var(--clr-primary-650) !important;
+  border: 1px solid var(--clr-primary-650);
 }
 
 /* Social Icons */
 .social-img {
   display: flex;
-  gap: 14px;
 }
-
-.social-img img {
-  width: 24px;
+.social-img a:not(:last-child) {
+  margin-right: 15px;
 }
 
 /* Other Columns */
-.footer-col h6 {
-  font-size: 24px;
-  font-weight: 400;
-  margin-bottom: 18px;
-  color: var(--footer-text);
+footer h6 {
+  font-size: var(--fs-400);
+  font-weight: var(--fw-regular);
+  color: var(--clr-primary-100);
+  line-height: var(--lh-125);
+  margin-bottom: 15px;
+}
+footer ul li {
+  cursor: pointer;
+}
+footer ul li > a {
+  font-size: var(--fs-300);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-155);
+  color: var(--clr-primary-100);
+  margin-bottom: 10px;
 }
 
-.footer-col ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-col ul li > a {
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 12px;
-  color: var(--footer-text);
-}
-
-.footer-col ul li:hover {
-  color: #27c2ff;
+footer ul li:hover a {
+  color: var(--clr-primary-200);
 }
 
 /* Bottom */
@@ -212,12 +187,12 @@ body {
   font-weight: 400;
   color: var(--footer-text);
 }
-.footer-col ul li {
+footer ul li {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.footer-col ul li:hover {
+footer ul li:hover {
   color: #27c2ff;
   transform: translateX(6px);
 }
@@ -242,203 +217,18 @@ body {
   background: #1aa9e0;
   transform: scale(1.05);
 }
-/* media Query */
 
-@media (max-width: 1200px) {
-  .footer-row {
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 40px;
-  }
+/* ===================== Footer End */
 
-  .footer-text {
-    font-size: 16px;
-  }
-}
-
-/*  Tablet Landscape ≤ 992px */
-
-@media (max-width: 992px) {
-  .footer-row {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-  }
-  .footer-col{
+@media screen and (max-width: 991px) {
+  .footer-content {
+    width: fit-content;
+    margin: 16px auto;
     text-align: center;
   }
-  .social-img{
-    margin: 0 auto;
-    max-width: fit-content;
-  }
-  .footer-col-logo {
-    grid-column: span 3;
-    text-align: center;
-    align-items: center;
-  }
-
-  .footer-logo {
-    justify-content: center;
-  }
-
-  .newsletter-form {
+  .footer-content > * {
+    width: fit-content;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    gap: 14px;
-    text-align: center;
-    margin-top: 30px;
-  }
-}
-
-/*  Tablet / Large Mobile ≤ 768px */
-
-@media (max-width: 768px) {
-  .footer-sec {
-    padding: 50px 0;
-  }
-
-  .footer-row {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-  }
-
-  .footer-col-logo {
-    grid-column: span 2;
-  }
-
-  .footer-col h6 {
-    font-size: 20px;
-  }
-
-  .footer-col ul li {
-    font-size: 16px;
-  }
-
-  .social-img {
-    justify-content: flex-start;
-  }
-}
-
-/*  Mobile ≤ 576px */
-
-@media (max-width: 576px) {
-  .footer-sec {
-    padding: 21px 0;
-  }
-  .footer-row {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
-
-  .footer-col,
-  .footer-col-logo {
-    text-align: center;
-    align-items: center;
-  }
-
-  .footer-col ul li {
-    justify-content: center;
-  }
-
-  .social-img {
-    justify-content: center;
-  }
-
-  .newsletter-form {
-    max-width: 100%;
-  }
-
-  .figma-newsletter input {
-    font-size: 13px;
-  }
-
-  .figma-newsletter button {
-    padding: 10px 22px;
-    font-size: 13px;
-  }
-
-  .footer-bottom-left p,
-  .footer-bottom-right p {
-    font-size: 14px;
-  }
-}
-
-/*  Small Mobile ≤ 360px */
-
-@media (max-width: 360px) {
-  .footer-text {
-    font-size: 14px;
-  }
-
-  .footer-col h6 {
-    font-size: 18px;
-  }
-
-  .footer-col ul li {
-    font-size: 14px;
-  }
-
-  .social-img img {
-    width: 20px;
-  }
-}
-@media (max-width: 320px) {
-  .footer-sec {
-    padding: 40px 0;
-  }
-
-  .footer-text {
-    font-size: 13px;
-    line-height: 1.5;
-    margin: 20px 0 24px;
-  }
-
-  .footer-col h6 {
-    font-size: 16px;
-    margin-bottom: 12px;
-  }
-
-  .footer-col ul li {
-    font-size: 13px;
-    margin-bottom: 8px;
-  }
-
-  /* Newsletter stack */
-  .figma-newsletter {
-    flex-direction: column;
-    border-radius: 18px;
-    padding: 6px;
-  }
-
-  .figma-newsletter input {
-    width: 100%;
-    text-align: center;
-    padding: 10px 12px;
-    font-size: 13px;
-  }
-
-  .figma-newsletter button {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 13px;
-  }
-
-  /* Social icons */
-  .social-img {
-    gap: 10px;
-    margin-top: 8px;
-  }
-
-  .social-img img {
-    width: 18px;
-  }
-
-  /* Footer bottom */
-  .footer-bottom-left p,
-  .footer-bottom-right p {
-    font-size: 12px;
-    line-height: 1.4;
   }
 }

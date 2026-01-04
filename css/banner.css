@@ -2,7 +2,7 @@
   min-height: 100vh;
   position: relative;
   background: var(--clr-primary-900);
-  /* overflow: hidden; */
+  overflow: hidden;
   padding: 150px 0;
 }
 
