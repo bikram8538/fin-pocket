@@ -58,29 +58,8 @@ footer::after {
 }
 
 /* Newsletter */
+
 .newsletter-form {
-  display: flex;
-  align-items: center;
-  background: #fff;
-  border-radius: 50px;
-  padding: 4px;
-  max-width: 380px;
-  margin: 0 0 60px;
-}
-
-.newsletter-form input {
-  flex: 1;
-  border: none;
-  outline: none;
-  padding: 10px 14px;
-  font-size: 14px;
-  border-radius: 50px;
-}
-.figma-newsletter {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-
   max-width: 420px;
   padding: 0;
 
@@ -93,52 +72,48 @@ footer::after {
 
   box-shadow: inset 0 0 0.5px rgba(255, 255, 255, 0.6),
     0 8px 24px rgba(0, 0, 0, 0.35);
+    position: relative;
 }
 
 /* Input */
-.figma-newsletter input {
-  flex: 1;
+.newsletter-form input {
   background: transparent;
   border: none;
   outline: none;
-
-  padding: 12px 18px;
-  font-size: 14px;
-  color: #ffffff;
-
+  padding: 15px 20px;
+  font-size: var(--fs-300);
+  font-weight: var(--fw-regular);
+  color: var(--clr-primary-100);
   border-radius: 50px;
+  width: 100%;
+  max-width: 420px;
+
 }
 
-.figma-newsletter input::placeholder {
-  color: rgba(255, 255, 255, 0.55);
+.newsletter-form input::placeholder {
+  color: var(--clr-fade-600);
 }
 
 /* Button */
-.figma-newsletter button {
+.newsletter-form input[type="submit"] {
+  position: absolute;
+  right: 0;
+  top: 0;
   border: 1px solid transparent; /* ⭐ ADD THIS */
-  outline: none;
-
-  padding: 12px 26px;
-  border-radius: 50px;
-
-  background: linear-gradient(135deg, #b9fb6a, #9eea42);
-  color: #000;
-  font-size: 14px;
-  font-weight: 500;
-
+  font-family: var(--ff-stolzl);
+  background: var(--clr-primary-200);
+  color: var(--clr-primary-900);
   cursor: pointer;
-
-  box-shadow: 0 0 12px rgba(185, 251, 106, 0.65),
-    inset 0 0 0.5px rgba(255, 255, 255, 0.7);
-
   transition: all 0.35s ease;
+  max-width: 133px;
+  width: 100%;
 }
 
 /* ===== HOVER STATE ===== */
-.newsletter-form button:hover {
-  background: transparent !important;
-  color: var(--clr-primary-650) !important;
-  border: 1px solid var(--clr-primary-650);
+.newsletter-form input[type="submit"]:hover {
+  background: transparent;
+  color: var(--clr-primary-200);
+  border: 1px solid var(--clr-primary-200);
 }
 
 /* Social Icons */
@@ -221,14 +196,16 @@ footer ul li:hover {
 /* ===================== Footer End */
 
 @media screen and (max-width: 991px) {
-  .footer-content {
-    width: fit-content;
-    margin: 16px auto;
+  .footer-content{
     text-align: center;
+    margin: 16px 0;
   }
   .footer-content > * {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+  }
+  .footer-top .row .col:first-child .footer-content > form{
+    width: 100%;
   }
 }
