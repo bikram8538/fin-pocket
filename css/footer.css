@@ -68,10 +68,10 @@ footer::after {
   -webkit-backdrop-filter: blur(12px);
 
   border-radius: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid var(--clr-fade-200);
 
-  box-shadow: inset 0 0 0.5px rgba(255, 255, 255, 0.6),
-    0 8px 24px rgba(0, 0, 0, 0.35);
+  box-shadow: inset 0 0 0.5px var(--clr-fade-600),
+    0 8px 24px var(--clr-fade-250);
     position: relative;
 }
 
@@ -87,7 +87,7 @@ footer::after {
   border-radius: 50px;
   width: 100%;
   max-width: 420px;
-
+  height: 52px;
 }
 
 .newsletter-form input::placeholder {
@@ -99,7 +99,7 @@ footer::after {
   position: absolute;
   right: 0;
   top: 0;
-  border: 1px solid transparent; /* ⭐ ADD THIS */
+  border: 1px solid transparent;
   font-family: var(--ff-stolzl);
   background: var(--clr-primary-200);
   color: var(--clr-primary-900);
@@ -116,13 +116,7 @@ footer::after {
   border: 1px solid var(--clr-primary-200);
 }
 
-/* Social Icons */
-.social-img {
-  display: flex;
-}
-.social-img a:not(:last-child) {
-  margin-right: 15px;
-}
+
 
 /* Other Columns */
 footer h6 {
@@ -147,52 +141,54 @@ footer ul li:hover a {
   color: var(--clr-primary-200);
 }
 
+
+
+/* Social Icons */
+.socials {
+  display: flex;
+}
+.socials a:not(:last-child) {
+  margin-right: 15px;
+}
+.socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  background: var(--clr-primary-650);
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.socials a:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 20px var(--clr-fade-400);
+}
 /* Bottom */
 .footer-bottom {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  color: var(--clr-primary-100);
+  font-size: var(--fs-300);
+  line-height: var(--lh-155);
 }
-.footer-bottom-right > a > p {
-  font-size: 18px;
-  font-weight: 400;
-  color: var(--footer-text);
+.footer-bottom a{
+  text-decoration: none;
+  color: var(--clr-primary-100);
+  font-size: var(--fs-300);
+  line-height: var(--lh-155);
 }
-.footer-bottom-left > a > p {
-  font-size: 18px;
-  font-weight: 400;
-  color: var(--footer-text);
+.footer-bottom-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-footer ul li {
-  position: relative;
-  transition: all 0.3s ease;
+.footer-bottom-right li:first-child{
+  margin-right: 10px;
 }
-
-footer ul li:hover {
-  color: #27c2ff;
-  transform: translateX(6px);
-}
-
-/* ===== Social Icon Hover ===== */
-.social-img a {
-  display: inline-flex;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.social-img a:hover {
-  transform: translateY(-6px) scale(1.05);
-  box-shadow: 0 10px 20px rgba(39, 194, 255, 0.35);
-}
-
-/* ===== Newsletter Button Hover ===== */
-.newsletter-form button {
-  transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.newsletter-form button:hover {
-  background: #1aa9e0;
-  transform: scale(1.05);
-}
-
 /* ===================== Footer End */
 
 @media screen and (max-width: 991px) {

@@ -1,4 +1,3 @@
-
 /* ========== Responsive =========== */
 
 @media screen and (max-width: 1200px) {
@@ -18,42 +17,40 @@
   .savings-wrapper-inner > div {
     max-width: 320px;
   }
-   /* variable expenses */
-  .table-header > .btn{
+  /* variable expenses */
+  .table-header > .btn {
     margin-top: 20px;
   }
 
-  
   .expenses-cta {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .expenses-cta> .btn-secondary{
+  .expenses-cta > .btn-secondary {
     margin-right: 20px;
   }
 
   .pricing-cards {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 @media screen and (max-width: 767px) {
-  .buddget-planner-left{
+  .buddget-planner-left {
     display: none;
   }
-  .buddget-planner-right{
+  .buddget-planner-right {
     margin: 0 auto;
   }
-  .buddget-planner-right figure{
+  .buddget-planner-right figure {
     padding: 30px;
     border-radius: 35px;
   }
   /* summary cards */
-  .row .summary-card{
+  .row .summary-card {
     height: auto;
     margin-bottom: 20px;
   }
-  .about-us .section-content{
+  .about-us .section-content {
     max-width: fit-content;
   }
 }
@@ -69,5 +66,11 @@
   }
   .pricing-cards {
     grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+    justify-content: center;
+  }
+  .footer-bottom-left{
+    margin-bottom: 10px;
   }
 }
