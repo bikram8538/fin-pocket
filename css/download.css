@@ -190,13 +190,18 @@
 .testimonial-sec {
   background: url(../assets/slider/slider-background.png) no-repeat center/cover;
 }
-.testimonial-sec .section-badge {
+/* .testimonial-sec .section-badge {
   box-shadow: none;
   backdrop-filter: none;
 }
 .test-badge {
   color: var(--primary-color);
-}
+} */
+ .test-badge{
+  color: var(--primary-color);
+  background: transparent;
+  border: 1px solid var(--clr-primary-100);
+ }
 .test-head {
   color: var(--primary-color);
 }
@@ -262,7 +267,7 @@
   width: 100%;
   object-fit: cover;
 }
-.testimonial-card p {
+.slider-para {
   font-size: 18px;
   font-weight: 400;
   color: var(--clr-primary-100);
