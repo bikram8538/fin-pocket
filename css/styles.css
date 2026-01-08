@@ -35,11 +35,7 @@ body {
   border-radius: 50px;
 
   /* Glass Base */
-  background:linear-gradient(
-        -45deg,
-        rgba(255, 255, 255, 0.08),
-        rgba(255, 255, 255, 0.02)
-      );
+  background:rgba(0, 0, 0, 0.2);
 
   backdrop-filter: blur(14px) saturate(130%) contrast(95%);
   -webkit-backdrop-filter: blur(14px) saturate(130%) contrast(95%);
@@ -823,6 +819,7 @@ Features
 .expenses-section::after {
   width: 50%;
 }
+
 .expenses-section .section-content {
   max-width: 100%;
   margin-bottom: 80px;
@@ -872,9 +869,7 @@ Features
   margin-bottom: 50px;
   font-family: var(--ff-dm-sans);
 }
-.expenses-section .section-badge {
-  margin-left: 0;
-}
+
 .summary-card {
   padding: 30px;
 }
@@ -1485,7 +1480,6 @@ td {
 
 .goals-grid .goal-card {
   flex-direction: column;
-  max-width: 350px;
   width: 100%;
 }
 .goals-grid .goal-card > div {
@@ -1495,7 +1489,7 @@ td {
 .goals-grid .goal-card .goal-footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 /* ==== Savings Goal End */
 
