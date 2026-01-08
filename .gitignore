@@ -9,6 +9,7 @@ testing-files/
 .DS_Store
 Thumbs.db
 test.html
+test.css
 # -----------------------------
 # VS Code Settings
 # -----------------------------
