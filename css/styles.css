@@ -600,7 +600,7 @@ Features
   margin: 0 auto;
 }
 .section-content p {
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .service-card-wrapper {
@@ -832,7 +832,6 @@ Features
   margin-right: 24px;
 }
 .steps-cards figure img {
-  height: 30px;
   width: 30px;
 }
 /* ======== workflow end ======== */
@@ -1126,6 +1125,9 @@ td {
   margin-top: 50px;
   width: fit-content;
 }
+.about-left > figure{
+  min-height: 800px;
+}
 .about-left > div {
   position: absolute;
 }
@@ -1376,7 +1378,12 @@ td {
 .goal-info {
   flex: 1;
 }
-
+.goals-layout h4{
+  font-size: var(--fs-350);
+  font-weight: var(--fw-bold);
+  font-family: var(--ff-dm-sans);
+  color: var(--clr-primary-100);
+}
 .goal-meta {
   display: flex;
   justify-content: space-between;
@@ -1491,7 +1498,7 @@ td {
 }
 
 .goal-header img {
-  width: 22px;
+  width: 28px;
 }
 
 .goal-target {
