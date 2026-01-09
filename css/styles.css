@@ -669,6 +669,7 @@ Features
   margin: 60px 0;
 }
 .buddget-planner-wrapper > div {
+  /* height: 842px;  */
   padding: 24px;
 }
 .buddget-planner-left figure {
@@ -676,40 +677,67 @@ Features
   width: fit-content;
   height: 100%;
 }
+
 .buddget-planner-right {
   display: flex;
   flex-direction: column;
+  gap: 48px;
   justify-content: space-between;
+  position: relative;
 }
 
-.buddget-planner-right > div {
+.feature-step {
   display: flex;
   align-items: center;
-}
-.buddget-planner-right figure {
-  padding: 45px;
-  background: var(--clr-primary-200);
-  border-radius: 44px;
-  margin-right: 24px;
-}
-/* 
-  Dasshed Connecting Line
-.buddget-planner-right div:first-child{
   position: relative;
-  background: rebeccapurple;
-  overflow: visible;
 }
-.buddget-planner-right div:first-child::before{
-  content: '';
+.feature-step figure {
+  width: 120px;
+  height: 120px;
+  padding: 35px;
+  background: var(--clr-primary-200);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 24px;
+  position: relative;
+  flex-shrink: 0;
+}
+.buddget-planner-right figure img{
+  width: 48px;
+  height: 48px;
+}
+.feature-step::before {
+  content: "";
   position: absolute;
-  top: 100%;
-  left: 11%;
-  height: 100%;
-  margin: 20px 0;
-  width: 7px;
-  border: 2px dashed var(--clr-primary-200);
-  z-index: -3;
-} */
+  left: 55px;                 /* center of icon */
+  top: 120px;                 /* bottom of icon */
+  height: calc(100% + 80px);
+  width: 10px;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--clr-primary-200) 0 6px,
+    transparent 6px 12px
+  );
+}
+.feature-step::after {
+  content: "";
+  position: absolute;
+  left: 50px;
+  /* top: calc(100% + 16px); */
+  top: -15px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 14px solid var(--clr-primary-200);
+}
+.feature-step:last-child::before,
+.feature-step:first-child::after {
+  display: none;
+}
+
 
 /* ======== workflow start ======== */
 .workflow {
