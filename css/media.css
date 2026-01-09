@@ -12,7 +12,20 @@
     min-width: 900px; /* prevents column squish */
   }
 }
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
 
+  .features-left {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .features-right {
+    grid-template-rows: auto auto;
+  }
+}
 @media screen and (max-width: 991px) {
   .savings-wrapper-inner > div {
     max-width: 320px;
@@ -48,7 +61,7 @@
     height: 40px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .buddget-planner-left {
     display: none;
   }
@@ -70,21 +83,29 @@
   .feature-step {
     gap: 16px;
   }
-
-  /* .feature-step figure {
-    width: 90px;
-    height: 90px;
-    border-radius: 28px;
+  .features {
+    padding: 80px 0;
   }
 
-  .feature-step::before {
-    left: 45px;
-    top: 90px;
+  .features-left {
+    grid-template-columns: 1fr;
   }
 
-  .feature-step::after {
-    left: 37px;
-  } */
+  .left-main {
+    order: 1;
+  }
+
+  .left-stack {
+    order: 0;
+  }
+
+  .features-right {
+    grid-template-columns: 1fr;
+  }
+
+  .savings-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -118,5 +139,26 @@
   .buddget-planner-right figure img {
     width: 30px;
     height: 30px;
+  }
+}
+@media (max-width: 360px) {
+  .features {
+    padding: 48px 0;
+  }
+
+  .features-grid {
+    gap: 20px;
+  }
+
+  .card {
+    padding: 14px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
   }
 }
