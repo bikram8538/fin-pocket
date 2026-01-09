@@ -81,6 +81,8 @@ html {
 
 body {
   background: var(--clr-primary-900);
+  overflow-x: hidden;
+
 }
 * {
   margin: 0;
