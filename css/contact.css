@@ -776,6 +776,7 @@ h3 {
 
   .contact-para > p {
     font-size: 15px;
+     margin: 0 auto;
   }
   /* map-sec */
   .contact-form-box h2 {
@@ -810,6 +811,7 @@ h3 {
 
   .contact-para > p {
     font-size: 14px;
+     margin: 0 auto;
   }
 }
 
@@ -821,6 +823,7 @@ h3 {
 
   .contact-para > p {
     font-size: 13px;
+     margin: 0 auto;
   }
   /* map-sec */
   .contact-form-box h2 {
