@@ -1590,25 +1590,3 @@ td {
 }
 /* ==== Savings Goal End */
 
-@media (max-width: 1024px) {
-  .goals-layout {
-    grid-template-columns: auto;
-  }
-}
-@media (max-width: 768px) {
-  .goal-card {
-    /* flex-direction: column; */
-    align-items: flex-start;
-  }
-
-  .goal-ring {
-    align-self: center;
-    margin-top: 20px;
-  }
-}
-@media (max-width: 768px) {
-  .goals-grid {
-    grid-template-columns: 1fr;
-    place-items: center;
-  }
-}

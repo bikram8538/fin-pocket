@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - Fin Pocket</title>
-    <link rel="canonical" href="https://www.finpocket.com/" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Fin Pocket</title>
+    <link rel="canonical" href="https://www.finpocket.com/pricing/" />
     <!-- Favicon -->
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/favicon/favicon-32x32.png"
-    />
-    <!-- Fontawsome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <!-- Swiper css  -->
     <link
@@ -32,15 +24,14 @@
     />
     <link rel="stylesheet" href="./css/varients.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/left-right-gradient.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./css/second-banner.css" />
+    <link rel="stylesheet" href="./css/second-banner.css">
+    <link rel="stylesheet" href="./css/faq.css" />
     <link rel="stylesheet" href="./css/download.css" />
-    <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/media.css" />
-  </head>
-  <body>
+</head>
+<body>
     <header>
       <div class="navbar">
         <div class="container">
@@ -62,7 +53,7 @@
                 <li class="nav-list">
                   <a class="nav-links" href="#">About Us</a>
                 </li>
-                <li class="nav-list"><a class="nav-links" href="#">FAQ</a></li>
+                <li class="nav-list"><a class="nav-links" href="faq.html">FAQ</a></li>
                 <li class="nav-list">
                   <a class="nav-links" href="contact.html">Contact</a>
                 </li>
@@ -135,7 +126,7 @@
             </div>
 
             <div class="nav-right">
-              <button class="btn btn-primary">Login</button>
+              <a href="./login.html" class="btn btn-primary">Login</a>
 
               <div class="nav-toggle">
                 <svg class="toggle-icon" viewBox="0 0 100 100">
@@ -172,175 +163,334 @@
     </header>
     <main>
       <div class="grid"></div>
-      <!-- Banner-section -->
       <section class="banner-sec">
         <div class="container">
           <div class="row">
-            <div class="col col-7">
+            <div class="col-7">
               <div class="banner-cntn">
                 <h1 class="banner-heading">
-                  Here to Support Your
-                  <span class="sub-banner">Financial Journey</span>
+                    Common Questions About Managing <span class="sub-banner">Your Money</span>
                 </h1>
                 <a href="index.html" class="home">Home ></a>
-                <a href="contact.html" class="contact">Contact</a>
+                <a href="faq.html" class="contact">FAQ</a>
               </div>
             </div>
-            <div class="col col-5">
+            <div class="col-5">
               <div class="banner-img">
-                <img src="./assets/banner/banner-img.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Contact-sec -->
-      <section class="contactus-sec">
-        <div class="radial-blur"></div>
-        <div class="container">
-          <p class="section-badge">Contact</p>
-          <div class="contact-outer">
-            <div class="contact-cntn">
-              <div class="contact-img">
-                <img src="./assets/contact/contact-1.png" alt="" />
-              </div>
-              <div class="contact-head">
-                <h2>Our Address</h2>
-              </div>
-              <div class="contact-para">
-                <p>2464 Royal Ln. Mesa New Jersey</p>
-                <p class="contact-num">45463</p>
-              </div>
-            </div>
-            <div class="contact-cntn">
-              <div class="contact-img">
-                <img src="./assets/contact/contact-2.png" alt="" />
-              </div>
-              <div class="contact-head">
-                <h2>contact@example.com</h2>
-              </div>
-              <div class="contact-para">
-                <p>Email us anytime for any kind of</p>
-                <p class="contact-num">query</p>
-              </div>
-            </div>
-            <div class="contact-cntn">
-              <div class="contact-img">
-                <img src="./assets/contact/contact-3.png" alt="" />
-              </div>
-              <div class="contact-head">
-                <h2>Call:+108-666-0112</h2>
-              </div>
-              <div class="contact-para">
-                <p>Call us any kind support, we will.</p>
-                <p class="contact-num">wait for it</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Map-section -->
-      <section class="map-sec">
-        <div class="container">
-          <div class="row">
-            <div class="col col-7 col-lg-12">
-              <div class="map-img" id="mapTrigger">
-                <img src="./assets/contact/map.png" alt="Map" />
-              </div>
-
-              <div class="map-popup" id="mapPopup">
-                <div class="map-inner">
-                  <span class="close-map" id="closeMap">✖</span>
-                  <iframe
-                    src="https://www.google.com/maps?q=kolkata&output=embed"
-                    allowfullscreen=""
-                    loading="lazy"
-                  >
-                  </iframe>
-                </div>
-              </div>
-            </div>
-            <div class="col col-5 col-lg-12">
-              <div class="contact-form-box">
-                <h2>Get in Touch</h2>
-                <p class="form-sub">
-                  Let’s build something impactful together.
-                </p>
-
-                <form>
-                  <div class="form-group">
-                    <label>Full Name*</label>
-                    <input type="text" placeholder="Your Name" />
-                  </div>
-
-                  <div class="form-group">
-                    <label>Email Address*</label>
-                    <input type="email" placeholder="Enter Your Email" />
-                  </div>
-
-                  <div class="form-group">
-                    <label>Subject*</label>
-                    <input
-                      type="text"
-                      placeholder="I would like to discussed"
-                    />
-                  </div>
-
-                  <div class="form-group">
-                    <label>Message*</label>
-                    <textarea placeholder="Write message"></textarea>
-                  </div>
-
-                  <button class="form-btn">Send Message Us</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Download-section -->
-      <section class="download-sec">
-        <div class="container">
-          <div class="row">
-            <div class="col col-9">
-              <div class="download-btn">
-                <p class="section-badge">Download Our App</p>
-              </div>
-              <div class="dowload-cntn">
-                <h4>"Save First Spend later,Stress never."</h4>
-              </div>
-              <div class="download-para">
-                <p>
-                  Smart money management empowers you to track expenses, save
-                  wisely invest effectively, and achieve financial freedom.
-                </p>
-              </div>
-              <div class="download-img">
-                <div class="left-download">
-                  <a href="">
-                    <img src="./assets/download/google-play 1.png" alt=""
-                  /></a>
-                </div>
-                <div class="right-download">
-                  <a href="">
-                    <img src="./assets/download/app-store 1.png" alt=""
-                  /></a>
-                </div>
-              </div>
-            </div>
-            <div class="col col-3">
-              <div class="mobile-img">
                 <img
-                  src="./assets/download/asdfasiPhone-15-Pro-Black-Titanium-Mockup-Portrait 6.png"
-                  alt=""
+                  src="./assets/banner/faq-banner.svg"
+                  alt="FAQ Banner Image"
                 />
               </div>
             </div>
           </div>
         </div>
       </section>
+      <section class="accordian-sec">
+        <div class="radial-blur"></div>
+
+        <!-- <div class="grid"></div> -->
+        <div class="container">
+          <div class="section-content">
+            <div class="accordian-content">
+              <p class="section-badge">Frequently Asked Questions</p>
+              <h2 class="sec-heading">
+                Everything You Need to Know About Fin Pocket
+              </h2>
+              <p class="sec-description">
+                Find quick answers to common questions about your budget
+                planning, expenses and more.
+              </p>
+            </div>
+            <div class="section-btn">
+              <div class="btn btn-primary">Explore More</div>
+            </div>
+          </div>
+          <div class="row accordian-row">
+            <div class="col col-6">
+              <div class="accordian-img" id="accordionImage">
+                <img src="./assets/Accordian/accordian.png" alt="" />
+              </div>
+            </div>
+
+            <div class="col col-6">
+              <div class="accordion-wrapper" id="accordionWrapper">
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <span>How do I sign up for an account?</span>
+                    <span class="icon">+</span>
+                  </div>
+                  <div class="accordion-body">
+                    Signing up is easy, just download the app, click on “Get
+                    started”, and follow the prompts. You can use your email
+                    address, Google, or Facebook to create an account.
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <span>Can I get access the app from multiple devices?</span>
+                    <span class="icon">+</span>
+                  </div>
+                  <div class="accordion-body">
+                    Yes, you can log in from multiple devices using the same
+                    account.
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <span>How can I download the application?</span>
+                    <span class="icon">+</span>
+                  </div>
+                  <div class="accordion-body">
+                    The application is available on Play Store and App Store.
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <span>Can I track cash transactions?</span>
+                    <span class="icon">+</span>
+                  </div>
+                  <div class="accordion-body">
+                    Yes, cash transactions can be tracked easily.
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <span>Can I customize expense categories?</span>
+                    <span class="icon">+</span>
+                  </div>
+                  <div class="accordion-body">
+                    You can create and manage your own categories.
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <span>Is my financial data secure?</span>
+                    <span class="icon">+</span>
+                  </div>
+                  <div class="accordion-body">
+                    Your data is encrypted and completely secure.
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <span>Can I create weekly or yearly budgets?</span>
+                    <span class="icon">+</span>
+                  </div>
+                  <div class="accordion-body">
+                    Yes, budgets can be created weekly, monthly, or yearly.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial-sec">
+        <div class="container">
+          <div class="section-content">
+            <p class="section-badge test-badge">Testimonials</p>
+            <h2 class="sec-heading test-head">What our users say</h2>
+            <p class="sec-description test-desc">
+              Users love our app for tracking expenses, saving smarter, and
+              enjoying secure tools, personalized insights, and rewarding
+              financial management
+            </p>
+          </div>
+          <div class="swiper testimonialSwiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide testimonial-card">
+                <div class="info">
+                  <div class="profile">
+                    <img src="./assets/slider/dp-1.png" alt="" />
+                  </div>
+                  <div>
+                    <h3 class="name">Rohit Mishra</h3>
+                    <p class="location">— Mumbai, India</p>
+                  </div>
+                </div>
+
+                <div class="stars">
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-2.png" alt="" />
+                  </div>
+                </div>
+
+                <p class="slider-para">
+                  “Managing my monthly budget has never been simple. The
+                  dashboard gives me instant clarity on where my money is
+                  going.”
+                </p>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="swiper-slide testimonial-card">
+                <div class="info">
+                  <div class="profile">
+                    <img src="./assets/slider/dp-2.png" alt="" />
+                  </div>
+                  <div>
+                    <h3 class="name">Daniel Collins</h3>
+                    <p class="location">— Berlin, Germany</p>
+                  </div>
+                </div>
+
+                <div class="stars">
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-2.png" alt="" />
+                  </div>
+                </div>
+
+                <p class="slider-para">
+                  “This tool helped me cut unnecessary expenses and save more
+                  every month. The charts are super easy to understand.”
+                </p>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="swiper-slide testimonial-card">
+                <div class="info">
+                  <div class="profile">
+                    <img src="./assets/slider/dp-3.png" alt="" />
+                  </div>
+                  <div>
+                    <h3 class="name">Aditi Ghosh</h3>
+                    <p class="location">— Kolkata, India</p>
+                  </div>
+                </div>
+
+                <div class="stars">
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-2.png" alt="" />
+                  </div>
+                </div>
+
+                <p class="slider-para">
+                  “As a student, budgeting used to be stressful. This planner
+                  made it effortless and even fun to track every rupee.”
+                </p>
+              </div>
+              <!-- Slide 4 -->
+              <div class="swiper-slide testimonial-card">
+                <div class="info">
+                  <div class="profile">
+                    <img src="./assets/slider/dp-1.png" alt="" />
+                  </div>
+                  <div>
+                    <h3 class="name">Rohit Mishra</h3>
+                    <p class="location">— Mumbai, India</p>
+                  </div>
+                </div>
+
+                <div class="stars">
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-2.png" alt="" />
+                  </div>
+                </div>
+
+                <p class="slider-para">
+                  “Managing my monthly budget has never been simple. The
+                  dashboard gives me instant clarity on where my money is
+                  going.”
+                </p>
+              </div>
+              <!-- slide-5 -->
+              <div class="swiper-slide testimonial-card">
+                <div class="info">
+                  <div class="profile">
+                    <img src="./assets/slider/dp-2.png" alt="" />
+                  </div>
+                  <div>
+                    <h3 class="name">Daniel Collins</h3>
+                    <p class="location">— Berlin, Germany</p>
+                  </div>
+                </div>
+                <div class="stars">
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-2.png" alt="" />
+                  </div>
+                </div>
+
+                <p class="slider-para">
+                  “This tool helped me cut unnecessary expenses and save more
+                  every month. The charts are super easy to understand.”
+                </p>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
     </main>
-    <!-- footer-section -->
     <footer>
       <!-- <div class="grid"></div> -->
       <div class="container">
@@ -365,6 +515,7 @@
 
             <div class="col col-1-5 col-xl-2 col-lg-6 col-sm-12">
               <div class="footer-content">
+                
                 <ul>
                   <li class="footer-heading">Company</li>
                   <li><a href="">Home</a></li>
@@ -378,6 +529,7 @@
 
             <div class="col col-2 col-xl-2 col-lg-6 col-sm-12">
               <div class="footer-content">
+                
                 <ul>
                   <li class="footer-heading">Services</li>
                   <li><a href="">CVP</a></li>
@@ -391,6 +543,7 @@
 
             <div class="col col-1-5 col-xl-2 col-lg-6 col-sm-12">
               <div class="footer-content">
+               
                 <ul>
                   <li class="footer-heading">Support</li>
                   <li><a href="">Testimonials</a></li>
@@ -404,6 +557,7 @@
 
             <div class="col col-3 col-xl-3 col-lg-6 col-sm-12">
               <div class="footer-content">
+              
                 <ul>
                   <li class="footer-heading">Contact</li>
                   <li><a href="">Email: support@finpocket.com</a></li>
@@ -458,12 +612,13 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    
     <script src="./js/navbar.js"></script>
     <script src="./js/clients.js"></script>
     <script src="./js/accordian.js"></script>
     <script src="./js/goal.js"></script>
     <script src="./js/pricing.js"></script>
     <script src="./js/swiper.js"></script>
-    <script src="./js/contact.js"></script>
-  </body>
+
+</body>
 </html>

@@ -11,6 +11,9 @@
   .expenses-table table {
     min-width: 900px; /* prevents column squish */
   }
+  .banner-img {
+    width: 460px;
+  }
 }
 @media (max-width: 1024px) {
   .features-grid {
@@ -24,6 +27,9 @@
 
   .features-right {
     grid-template-rows: auto auto;
+  }
+  .goals-layout {
+    grid-template-columns: auto;
   }
 }
 @media screen and (max-width: 991px) {
@@ -127,6 +133,19 @@
   .savings-grid {
     grid-template-columns: 1fr;
   }
+  .goal-card {
+    /* flex-direction: column; */
+    align-items: flex-start;
+  }
+
+  .goal-ring {
+    align-self: center;
+    margin-top: 20px;
+  }
+  .goals-grid {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -178,7 +197,15 @@
     height: 30px;
   }
 }
+
 @media (max-width: 360px) {
+  :root {
+    --fs-900: 30px;
+    --fs-500: 24px;
+  }
+  .btn {
+    padding: 9px 15px;
+  }
   .features {
     padding: 48px 0;
   }
