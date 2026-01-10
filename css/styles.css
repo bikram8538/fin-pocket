@@ -58,6 +58,7 @@ body {
     rgba(255, 255, 255, 0.06) 10%,
     transparent 10%
   );
+  pointer-events: none;
 }
 .section-btn {
   display: flex;
@@ -818,6 +819,7 @@ main{
   box-shadow: none;
   border-width: 1px;
   backdrop-filter: none;
+  background: rgba(0, 0, 0, 0);
 }
 
 .workflow-content h2 {
