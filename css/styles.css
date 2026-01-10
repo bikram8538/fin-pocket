@@ -71,6 +71,151 @@ h3 {
   font-size: var(--fs-350);
   font-weight: var(--fw-medium);
 }
+/* ===== Section Left Right Gradient Start ====== */
+section {
+  position: relative;
+}
+section::before,
+section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -11;
+}
+section::before {
+  left: 0;
+  background: radial-gradient(
+    circle at left center,
+    rgba(185, 251, 106, 0.5),
+    transparent 85%
+  );
+}
+section::after {
+  right: 0;
+  background: radial-gradient(
+    circle at right center,
+    rgba(185, 251, 106, 0.5),
+    transparent 85%
+  );
+}
+main{
+  position: relative;
+}
+.grid {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+
+  background-image: repeating-linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.05) 0,
+      rgba(255, 255, 255, 0.05) 1px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 45px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.05) 0,
+      rgba(255, 255, 255, 0.05) 1px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 23px
+    );
+    pointer-events: none;
+}
+.banner > *:not(.grid) {
+  position: relative;
+  z-index: 12;
+}
+.radial-blur {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  /* width: 600px;
+  height: 180px; */
+  width: clamp(360px, 60vw, 720px);
+  height: clamp(120px, 20vw, 220px);
+
+  transform: translate(-50%, -50%);
+
+  background: radial-gradient(
+    ellipse at center,
+    rgba(185, 251, 106, 0.9) 0%,
+    rgba(185, 251, 106, 0.55) 25%,
+    rgba(185, 251, 106, 0.25) 45%,
+    rgba(185, 251, 106, 0.1) 60%,
+    rgba(185, 251, 106, 0.05) 70%,
+    rgba(185, 251, 106, 0.02) 80%,
+    rgba(185, 251, 106, 0) 100%
+  );
+
+  filter: blur(120px); /* CSS equivalent of Figma blur 500 */
+  pointer-events: none;
+  z-index: 0;
+}
+/* ===== Section Left Right Gradient End ====== */
+/* ===== Client Start ==== */
+#client-top {
+  transform: rotate(6deg);
+}
+#client-top .clients-img img{
+    transform: skew(10deg);
+}
+#client-bottom {
+  position: absolute;
+  transform: rotate(-6deg);
+  top: 0px;
+}
+#client-bottom .clients-img img{
+    transform: skew(-10deg);
+
+}
+.clients {
+  padding: 12px 0;
+  width: 100%;
+  overflow: hidden;
+  background: var(--clr-primary-200);
+}
+.clients-swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.clients-wrapper {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  transition-timing-function: linear !important;
+}
+
+.client-slide {
+  width: auto;
+  padding: 0 12px;
+  flex-shrink: 0;
+}
+
+.clients-img img {
+  height: 30px;
+  width: auto;
+}
+
+.client-band-wrapper {
+  position: absolute;
+  left: 50%;
+  bottom: -70px;
+  transform: translateX(-50%);
+  width: 120vw; /* wider for angled look */
+  z-index: 4;
+  pointer-events: none;
+}
+
+/* ===== Client End ==== */
+
 /* ======= Features Section Start */
 .features {
   padding: 100px 0;
@@ -167,7 +312,7 @@ h3 {
 }
 
 
-/* Feature Start */
+/* ============== Feature Start ======== */
 .features span {
   display: block;
 }
@@ -1092,7 +1237,8 @@ td {
 .download-sec .sec-sub-heading {
   width: fit-content;
   margin-left: 0;
-} /* ======== Pricing Plan Start ======== */
+} 
+/* ======== Pricing Plan Start ======== */
 
 .pricing .section-content {
   max-width: 100%;
