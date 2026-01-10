@@ -34,6 +34,27 @@
     text-align: center;
     color: var(--clr-fade-600);
 }
+
+/* ====== Get Started Section Start ====== */
+.get-started{
+    position: relative;
+}
+.get-started figure{
+    position: absolute;
+}
+.get-started-left{
+    top: 0;
+}
+.get-started-right{
+    top: 0;
+    right: 0;
+}
+.get-started-dec{
+    color: var(--clr-fade-600);
+    text-align: center;
+}
+/* ====== Get Started Section End ====== */
+
 /* ==== Section Benefits End ====== */
 @media (max-width: 1024px) {
     .benefits-card{
