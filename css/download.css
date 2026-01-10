@@ -200,6 +200,7 @@
  .test-badge{
   color: var(--primary-color);
   background: transparent;
+  box-shadow: none !important;
   border: 1px solid var(--clr-primary-100);
  }
 .test-head {
