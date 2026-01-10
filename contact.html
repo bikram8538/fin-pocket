@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/second-banner.css" />
     <link rel="stylesheet" href="./css/download.css" />
-    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/contact-bik.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/media.css" />
   </head>
@@ -62,7 +62,9 @@
                 <li class="nav-list">
                   <a class="nav-links" href="about-us.html">About Us</a>
                 </li>
-                <li class="nav-list"><a class="nav-links" href="faq.html">FAQ</a></li>
+                <li class="nav-list">
+                  <a class="nav-links" href="faq.html">FAQ</a>
+                </li>
                 <li class="nav-list">
                   <a class="nav-links" href="contact.html">Contact</a>
                 </li>
@@ -171,128 +173,154 @@
       </div>
     </header>
     <main>
-      <div class="grid"></div>
-      <!-- Banner-section -->
       <section class="banner-sec">
         <div class="container">
-              <div class="banner-cntn">
-                <h1 class="banner-heading">
-                  Here to Support Your
-                  <span class="sub-banner">Financial Journey</span>
-                </h1>
-                <a href="index.html" class="home">Home ></a>
-                <a href="contact.html" class="contact">Contact</a>
-              </div>
-              <div class="banner-img">
-                <figure><img src="./assets/banner/banner-img.png" alt="" /></figure>
-            </div>
-        </div>
-      </section>
-      <!-- Contact-sec -->
-      <section class="contactus-sec">
-        <div class="radial-blur"></div>
-        <div class="container">
-          <p class="section-badge">Contact</p>
-          <div class="contact-outer">
-            <div class="contact-cntn">
-              <div class="contact-img">
-                <img src="./assets/contact/contact-1.png" alt="" />
-              </div>
-              <div class="contact-head">
-                <h2>Our Address</h2>
-              </div>
-              <div class="contact-para">
-                <p>2464 Royal Ln. Mesa New Jersey</p>
-                <p class="contact-num">45463</p>
-              </div>
-            </div>
-            <div class="contact-cntn">
-              <div class="contact-img">
-                <img src="./assets/contact/contact-2.png" alt="" />
-              </div>
-              <div class="contact-head">
-                <h2>contact@example.com</h2>
-              </div>
-              <div class="contact-para">
-                <p>Email us anytime for any kind of</p>
-                <p class="contact-num">query</p>
-              </div>
-            </div>
-            <div class="contact-cntn">
-              <div class="contact-img">
-                <img src="./assets/contact/contact-3.png" alt="" />
-              </div>
-              <div class="contact-head">
-                <h2>Call:+108-666-0112</h2>
-              </div>
-              <div class="contact-para">
-                <p>Call us any kind support, we will.</p>
-                <p class="contact-num">wait for it</p>
-              </div>
-            </div>
+          <div class="banner-cntn">
+            <h1 class="banner-heading">
+              Here to Support Your
+              <span class="sub-banner">Financial Journey</span>
+            </h1>
+            <a href="index.html" class="home">Home ></a>
+            <a href="contact.html" class="contact">Contact</a>
+          </div>
+          <div class="banner-img">
+            <figure><img src="./assets/banner/banner-img.png" alt="" /></figure>
           </div>
         </div>
       </section>
-      <!-- Map-section -->
-      <section class="map-sec">
+      <section class="contact">
         <div class="container">
-          <div class="row">
-            <div class="col col-7 col-lg-12">
-              <div class="map-img" id="mapTrigger">
-                <img src="./assets/contact/map.png" alt="Map" />
-              </div>
-
-              <div class="map-popup" id="mapPopup">
-                <div class="map-inner">
-                  <span class="close-map" id="closeMap">✖</span>
-                  <iframe
-                    src="https://www.google.com/maps?q=kolkata&output=embed"
-                    allowfullscreen=""
-                    loading="lazy"
+          <div class="section-content">
+            <p class="section-badge">Contact</p>
+          </div>
+          <div class="cnt-cards">
+            <div class="row">
+              <div class="col col-4 col-md-12">
+                <div class="cnt-card">
+                  <a
+                    href="https://maps.app.goo.gl/DBrr9gNRLEs4MCLW7"
+                    target="_blank"
                   >
-                  </iframe>
+                    <figure class="cnt-img">
+                      <img src="./assets/contact/location.svg" alt="location" />
+                    </figure>
+                    <h3 class="cnt-heading">Our Address</h3>
+                    <span class="cnt-abt"
+                      >2464 Royal Ln. Mesa New Jersey 45463</span
+                    >
+                  </a>
+                </div>
+              </div>
+              <div class="col col-4 col-md-12">
+                <div class="cnt-card">
+                  <a href="mailto:contact@example.com" target="_blank">
+                    <figure class="cnt-img">
+                      <img
+                        src="./assets/contact/mail-open.svg"
+                        alt="mail-open"
+                      />
+                    </figure>
+                    <h3 class="cnt-heading">contact@example.com</h3>
+                    <span class="cnt-abt"
+                      >Email us anytime for any kind of query</span
+                    >
+                  </a>
+                </div>
+              </div>
+              <div class="col col-4 col-md-12">
+                <div class="cnt-card">
+                  <a href="tel:+1086660112" target="_blank">
+                    <figure class="cnt-img">
+                      <img src="./assets/contact/calling.svg" alt="calling" />
+                    </figure>
+                    <h3 class="cnt-heading">Call: +108-666-0112</h3>
+                    <span class="cnt-abt"
+                      >Call us any kind support, we will wait for it.</span
+                    >
+                  </a>
                 </div>
               </div>
             </div>
-            <div class="col col-5 col-lg-12">
-              <div class="contact-form-box">
-                <h2>Get in Touch</h2>
-                <p class="form-sub">
-                  Let’s build something impactful together.
-                </p>
-
-                <form>
-                  <div class="form-group">
-                    <label>Full Name*</label>
-                    <input type="text" placeholder="Your Name" />
-                  </div>
-
-                  <div class="form-group">
-                    <label>Email Address*</label>
-                    <input type="email" placeholder="Enter Your Email" />
-                  </div>
-
-                  <div class="form-group">
-                    <label>Subject*</label>
-                    <input
-                      type="text"
-                      placeholder="I would like to discussed"
-                    />
-                  </div>
-
-                  <div class="form-group">
-                    <label>Message*</label>
-                    <textarea placeholder="Write message"></textarea>
-                  </div>
-
-                  <button class="form-btn">Send Message Us</button>
-                </form>
+          </div>
+          <div class="contact-layout">
+            <div class="row">
+              <div class="col col-6">
+                <div class="contact-map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d181444.59349759194!2d-74.4056612!3d40.058323800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c1655555555555%3A0x3b6b3c3e24596378!2sDhanprada!5e1!3m2!1sen!2sin!4v1768079387603!5m2!1sen!2sin"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+              <div class="col col-6">
+                <div class="contact-form">
+                  <h2 class="contact-title">Get in Touch</h2>
+                  <p class="contact-subtitle">
+                    Let’s build something impactful together.
+                  </p>
+                  <form action="" class="cnt-form-body">
+                    <div class="cnt-form-grp">
+                      <label for="name" class="cnt-form-label"
+                        >Full Name*</label
+                      >
+                      <input
+                        id="name"
+                        type="text"
+                        class="cnt-form-input"
+                        placeholder="Your Name"
+                      />
+                    </div>
+                    <div class="cnt-form-grp">
+                      <label for="email" class="cnt-form-label"
+                        >Email Address*</label
+                      >
+                      <input
+                        id="email"
+                        type="email"
+                        class="cnt-form-input"
+                        placeholder="Enter Your Email"
+                      />
+                    </div>
+                    <div class="cnt-form-grp">
+                      <label for="subject" class="cnt-form-label"
+                        >Subject*</label
+                      >
+                      <input
+                        id="subject"
+                        type="text"
+                        class="cnt-form-input"
+                        placeholder="I would like to discussed"
+                      />
+                    </div>
+                    <div class="cnt-form-grp">
+                      <label for="message" class="cnt-form-label"
+                        >Message*</label
+                      >
+                      <textarea
+                        id="message"
+                        class="cnt-form-textarea"
+                        placeholder="Write message"
+                      ></textarea>
+                    </div>
+                    <div class="section-btn">
+                      <input
+                        type="submit"
+                        value="Send Message Us"
+                        class="btn btn-primary"
+                      />
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Download-section -->
       <section class="download-sec">
         <div class="container">
           <div class="row">
@@ -334,7 +362,6 @@
         </div>
       </section>
     </main>
-    <!-- footer-section -->
     <footer>
       <!-- <div class="grid"></div> -->
       <div class="container">
@@ -447,17 +474,10 @@
         </div>
       </div>
     </footer>
-
     <!-- Swiper JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/navbar.js"></script>
-    <script src="./js/clients.js"></script>
-    <script src="./js/accordian.js"></script>
-    <script src="./js/goal.js"></script>
-    <script src="./js/pricing.js"></script>
-    <script src="./js/swiper.js"></script>
-    <script src="./js/contact.js"></script>
   </body>
 </html>

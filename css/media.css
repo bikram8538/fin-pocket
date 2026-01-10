@@ -63,6 +63,9 @@
     width: 40px;
     height: 40px;
   }
+  .contact-form{
+    margin-top: 40px;
+  }
 }
 @media screen and (max-width: 768px) {
   .grid {
