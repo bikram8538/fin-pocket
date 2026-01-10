@@ -505,8 +505,13 @@ h3 {
 }
 @media (max-width: 375px) {
   :root {
-    --fs-900: 30px;
-    --fs-500: 24px;
+    --fs-100: 10px;
+    --fs-200: 12px;
+    --fs-300: 12px;
+    --fs-350: 14px;
+    --fs-400: 16px;
+    --fs-500: 16px;
+    --fs-900: 28px;
   }
   .btn {
     padding: 9px 15px;

@@ -3,94 +3,764 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/varients.css">
-    <link rel="stylesheet" href="./css/left-right-gradient.css">
-    
+    <title>About Us - Fin Pocket</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <!-- Fontawsome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Swiper css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Swiper-cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/varients.css" />
+    <link rel="stylesheet" href="./css/left-right-gradient.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/second-banner.css" />
+    <link rel="stylesheet" href="./css/download.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+
   </head>
   <body>
-    <section class="about-us">
-      <div class="container">
-        <div class="section-content">
-          <p class="sec-sub-heading">About Us</p>
-          <!-- <h2 class="sec-heading">Your Pocket-Sized <span>Financial Coach</span></h2> -->
-        </div>
-        <div class="about-wrapper">
-          <div class="row">
-            <div class="col-6 col-lg-12">
-              <div class="about-left">
-                <div class="live-chat">
-                  <div class="live-chat-content">
-                    <span>Prefer to Chat Live?</span>
-                    <span
-                      >Our support team is available 24/7 to assist you in
-                      real-time.</span
-                    >
-                  </div>
-                  <div class="live-chat-btn">
-                    <figure>
-                      <img src="./assets/about-us/live-chat.svg" alt="chat" />
-                    </figure>
-                    <button class="btn btn-primary">
-                      Your Own Budgeting friend
-                    </button>
-                  </div>
-                </div>
-                <div class="about-media">
-                  <svg
-                    viewBox="0 0 648 647"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="media-shape"
-                  >
-                    <defs>
-                      <clipPath id="mediaClip">
-                        <path
-                          d="M628 0C639.046 0 648 8.95431 648 20V627C648 638.046 639.046 647 628 647H20C8.9543 647 0 638.046 0 627V120.29C0 92.6758 22.3858 70.29 50 70.29H348.136C395.276 70.29 418.847 70.2902 433.491 55.6455C435.881 53.2554 437.881 50.6275 439.555 47.6982C453.037 24.0977 469.656 0 496.836 0H628Z"
-                        />
-                      </clipPath>
-                    </defs>
+    <header>
+      <div class="navbar">
+        <div class="container">
+          <nav>
+            <a href="#" class="nav-logo">
+              <img src="./assets/navbar/logo.svg" alt="logo"
+            /></a>
+            <div class="nav-collapsed">
+              <ul class="nav-items">
+                <li class="nav-list">
+                  <a class="nav-links active" href="index.html">Home</a>
+                </li>
+                <li class="nav-list">
+                  <a class="nav-links" href="features.html">Features</a>
+                </li>
+                <li class="nav-list">
+                  <a class="nav-links" href="pricing.html">Pricing</a>
+                </li>
+                <li class="nav-list">
+                  <a class="nav-links" href="about-us.html">About Us</a>
+                </li>
+                <li class="nav-list"><a class="nav-links" href="faq.html">FAQ</a></li>
+                <li class="nav-list">
+                  <a class="nav-links" href="contact.html">Contact</a>
+                </li>
+              </ul>
 
-                    <image
-                      href="./assets/about-us/women.png"
-                      width="100%"
-                      height="100%"
-                      clip-path="url(#mediaClip)"
-                      preserveAspectRatio="xMidYMid slice"
+              <ul class="nav-actions">
+                <li>
+                  <button>
+                    <svg
+                      class="nav-actions-svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M1.5625 13.125C1.5625 6.73921 6.73921 1.5625 13.125 1.5625C19.5107 1.5625 24.6875 6.73921 24.6875 13.125C24.6875 19.5107 19.5107 24.6875 13.125 24.6875C6.73921 24.6875 1.5625 19.5107 1.5625 13.125ZM13.125 3.4375C7.77474 3.4375 3.4375 7.77474 3.4375 13.125C3.4375 18.4753 7.77474 22.8125 13.125 22.8125C18.4753 22.8125 22.8125 18.4753 22.8125 13.125C22.8125 7.77474 18.4753 3.4375 13.125 3.4375Z"
+                      />
+                      <path
+                        d="M24.783 27.4597C24.0821 27.3735 23.4189 26.9817 23.0169 26.3117L21.6515 24.0361C21.2412 23.3522 21.349 22.4769 21.9129 21.913C22.2797 21.5461 22.7782 21.3724 23.2701 21.4086C23.5346 21.428 23.7971 21.5081 24.0362 21.6516L26.312 23.017C27.6516 23.8209 27.8792 25.6696 26.7745 26.7744C26.2966 27.2522 25.6794 27.4809 25.0677 27.4779C24.9725 27.4774 24.8775 27.4714 24.783 27.4597Z"
+                      />
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <svg
+                      class="nav-actions-svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15 2.8125C11.7208 2.8125 9.0625 5.47081 9.0625 8.75C9.0625 12.0292 11.7208 14.6875 15 14.6875C18.2793 14.6875 20.9375 12.0292 20.9375 8.75C20.9375 5.47081 18.2793 2.8125 15 2.8125ZM10.9375 8.75C10.9375 6.50634 12.7564 4.6875 15 4.6875C17.2436 4.6875 19.0625 6.50634 19.0625 8.75C19.0625 10.9937 17.2436 12.8125 15 12.8125C12.7564 12.8125 10.9375 10.9937 10.9375 8.75Z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10.8948 16.5625C9.23386 16.5625 7.69693 17.4415 6.85468 18.873L6.02746 20.2791C5.37456 21.3888 5.0945 22.6847 5.36188 23.8497C5.64095 25.0656 6.5055 26.0564 7.92039 26.4219C11.8719 27.4428 18.1285 27.4428 22.08 26.4219C23.4949 26.0564 24.3595 25.0656 24.6385 23.8497C24.9059 22.6847 24.6259 21.3888 23.973 20.2791L23.1458 18.873C22.3035 17.4415 20.7665 16.5625 19.1056 16.5625H10.8948ZM8.47074 19.8239C8.97608 18.9649 9.89824 18.4375 10.8948 18.4375H19.1056C20.1021 18.4375 21.0244 18.9649 21.5296 19.8239L22.3569 21.2299C22.8219 22.0201 22.9493 22.8283 22.811 23.4304C22.6845 23.9815 22.3305 24.4206 21.611 24.6065C17.9671 25.5479 12.0332 25.5479 8.38938 24.6065C7.66991 24.4206 7.31586 23.9815 7.18936 23.4304C7.05118 22.8283 7.17859 22.0201 7.64351 21.2299L8.47074 19.8239Z"
+                      />
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <svg
+                      class="nav-actions-svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M14.9998 2.34375C10.3995 2.34375 6.56227 5.86684 6.56227 10.3332V11.6528C6.56227 12.9371 6.18212 14.1926 5.46974 15.2612C5.45717 15.28 5.4453 15.2994 5.43414 15.319L4.96084 16.1543C4.34819 17.2354 4.14857 18.5001 4.39319 19.7161C4.41149 19.8071 4.4412 19.934 4.4889 20.0872C5.06807 21.9478 6.87596 22.9045 8.36214 23.3521C8.74304 23.4667 9.14407 23.5699 9.56117 23.6614C9.5623 23.664 9.56342 23.6665 9.56457 23.669C10.7239 26.221 12.7867 27.6562 15 27.6562C17.2135 27.6562 19.2763 26.221 20.4355 23.669C20.4367 23.6664 20.4379 23.6639 20.439 23.6613C20.8584 23.5693 21.2615 23.4655 21.6444 23.35C23.15 22.8958 24.8863 21.9215 25.4898 20.1007C25.5125 20.0323 25.5314 19.9715 25.5458 19.925C25.5619 19.8726 25.569 19.8501 25.5739 19.8358C25.5873 19.797 25.598 19.7574 25.6062 19.7173C25.8525 18.5 25.651 17.2347 25.0387 16.1543L24.5654 15.319C24.5543 15.2994 24.5424 15.28 24.5298 15.2612C23.8174 14.1926 23.4373 12.9371 23.4373 11.6528V10.3332C23.4373 5.86684 19.6 2.34375 14.9998 2.34375ZM18.0649 24.0416C16.076 24.2569 13.9242 24.257 11.9352 24.0417C12.8217 25.2529 13.9574 25.7812 15 25.7812C16.0428 25.7812 17.1785 25.2527 18.0649 24.0416ZM8.43727 10.3332C8.43727 7.01015 11.3239 4.21875 14.9998 4.21875C18.6757 4.21875 21.5623 7.01015 21.5623 10.3332V11.6528C21.5623 13.2956 22.0452 14.9019 22.9504 16.2721L23.4074 17.0786C23.7885 17.7513 23.9194 18.5362 23.7782 19.2951L23.7579 19.36L23.7547 19.3705C23.7405 19.4161 23.7264 19.4615 23.7101 19.5107C23.3944 20.4631 22.3942 21.1654 21.1028 21.5549C17.6878 22.5853 12.3205 22.5859 8.90279 21.5567C7.58304 21.1593 6.57101 20.4675 6.27915 19.5299C6.25315 19.4464 6.23871 19.3829 6.23137 19.3464C6.07526 18.5704 6.20301 17.7654 6.59212 17.0786L7.04917 16.2721C7.95444 14.9019 8.43727 13.2956 8.43727 11.6528V10.3332Z"
+                      />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="nav-right">
+              <a href="./login.html" class="btn btn-primary">Login</a>
+
+              <div class="nav-toggle">
+                <svg class="toggle-icon" viewBox="0 0 100 100">
+                  <rect
+                    class="line line1"
+                    x="20"
+                    y="20"
+                    width="70"
+                    height="10"
+                    rx="6"
+                  ></rect>
+                  <rect
+                    class="line line2"
+                    x="20"
+                    y="44"
+                    width="70"
+                    height="10"
+                    rx="6"
+                  ></rect>
+                  <rect
+                    class="line line3"
+                    x="20"
+                    y="68"
+                    width="70"
+                    height="10"
+                    rx="6"
+                  ></rect>
+                </svg>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="grid"></div>
+      <section class="banner-sec">
+        <div class="container">
+              <div class="banner-cntn">
+                <h1 class="banner-heading">
+                  Designed to Help You <span class="sub-banner">Spend Wisely</span> and Live Stress-Free
+                </h1>
+                <a href="index.html" class="home">Home ></a>
+                <a href="about-us.html" class="contact">About Us</a>
+              </div>
+              <div class="banner-img">
+                <figure><img src="./assets/banner/about-us-banner.svg" alt="About Us Banner" /></figure>
+            </div>
+        </div>
+      </section>
+
+      <section class="about-us">
+        <div class="radial-blur"></div>
+
+        <!-- <div class="grid"></div> -->
+        <div class="container">
+          <div class="section-content">
+            <h2 class="section-badge">About Us</h2>
+            <!-- <h2 class="sec-heading">Your Pocket-Sized <span>Financial Coach</span></h2> -->
+          </div>
+          <div class="about-wrapper">
+            <div class="row">
+              <div class="col col-6 col-lg-12">
+                <!-- =======  main div -->
+                <div class="about-left">
+                  <figure>
+                    <img
+                      src="./assets/about-us/laptop-clip-path.svg"
+                      alt="laptop"
                     />
-                  </svg>
+                  </figure>
+
+                  <!-- ======= top div -->
+                  <div class="live-chat glass">
+                    <div class="live-chat-content">
+                      <span>Prefer to Chat Live?</span>
+                      <span
+                        >Our support team is available 24/7 to assist you in
+                        real-time.</span
+                      >
+                    </div>
+                    <div class="live-chat-btn">
+                      <figure>
+                        <img src="./assets/about-us/live-chat.svg" alt="chat" />
+                      </figure>
+                      <button class="btn btn-primary">
+                        Your Own Budgeting friend
+                      </button>
+                    </div>
+                  </div>
+                  <!-- ======= bottom div -->
+                  <div class="about-feature glass">
+                    <!-- <div class="feature"> -->
+                    <span>Smart, Simple</span>
+                    <span>Money</span>
+                    <span>Management</span>
+                    <!-- </div> -->
+                  </div>
                 </div>
-                <div class="about-feature-swiper">
-                  <div class="swiper about-feature">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="feature-swiper-content">
-                          <span>Smart, Simple</span>
-                          <span>Money</span>
-                          <span>Management</span>
-                        </div>
+              </div>
+              <div class="col col-6 col-lg-12">
+                <div class="section-content">
+                  <p class="sec-heading">
+                    Your Pocket-Sized <span>Financial Coach</span>
+                  </p>
+                  <p class="sec-description">
+                    We designed this platform to make expense tracking simple
+                    and intuitive. Managing money should feel easy, not
+                    overwhelming. Our clean interface helps you understand your
+                    spending at a glance. Smart tools highlight patterns so you
+                    can make informed decisions. You can track expenses quickly
+                    and stay organized every day. Visual insights show exactly
+                    where your money goes. The platform works seamlessly across
+                    all your devices. Whether you're at home or on the go, your
+                    budget is always accessible. We believe financial clarity
+                    leads to financial confidence. That’s why we focus on
+                    reliability and ease of use. Your data stays safe with
+                    strong security and privacy protection. Our mission is to
+                    help you take control of your finances with confidence and
+                    ease.
+                  </p>
+                  <div class="section-btn">
+                    <a href="#" class="btn btn-primary">View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="workflow">
+        <div class="container">
+          <div class="workflow-wrapper">
+            <div class="row">
+              <div class="col col-6 col-lg-12">
+                <div class="workflow-content">
+                  <div class="section-content">
+                    <p class="section-badge">Workflow</p>
+                    <h2 class="sec-heading">
+                      A smarter way to manage your money
+                    </h2>
+                    <p>
+                      Our ultimate solution for seamless and intelligent money
+                      management.
+                    </p>
+                  </div>
+                  <div class="savings-content">
+                    <h3>Automated Savings</h3>
+                    <p>
+                      Effortlessly save money with our automated savings
+                      feature. Set your goals, and Smart cash will so the rest,
+                      helping you achieve financial milestones without even
+                      thinking about it
+                    </p>
+                  </div>
+                  <div class="expences-content">
+                    <h3>Track your expenses</h3>
+                    <p>
+                      Stay on top of your spending with a simple and intuitive
+                      tracking system. Add, edit, and monitor expenses in
+                      seconds, helping you understand where your money goes and
+                      make smarter financial decisions every day.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-6 col-lg-12">
+                <div class="workflow-steps">
+                  <div class="steps-cards">
+                    <div>
+                      <figure>
+                        <img src="./assets/workflow/signup.svg" alt="signup" />
+                      </figure>
+                      <div>
+                        <h3>Sign Up</h3>
+                        <p>Create your account in minutes.</p>
                       </div>
-                      <div class="swiper-slide">
-                        <div class="feature-swiper-content">
-                          <span>Smart, Simple</span>
-                          <span>Money</span>
-                          <span>Management</span>
-                        </div>
+                    </div>
+
+                    <div>
+                      <figure>
+                        <img src="./assets/workflow/album.svg" alt="album" />
+                      </figure>
+                      <div>
+                        <h3>Link Accounts</h3>
+                        <p>Securely connect your financial accounts.</p>
                       </div>
-                      <!-- <div class="swiper-slide"><div class="feature-swiper-content">
-												<span>Smart, Simple</span>
-												<span>Money</span>
-												<span>Management</span>
-											</div></div> -->
+                    </div>
+
+                    <div>
+                      <figure>
+                        <img
+                          src="./assets/workflow/analyze.svg"
+                          alt="analyze"
+                        />
+                      </figure>
+                      <div>
+                        <h3>Analyze</h3>
+                        <p>Access detailed insights and analytics.</p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <figure>
+                        <img
+                          src="./assets/workflow/transact.svg"
+                          alt="transact"
+                        />
+                      </figure>
+                      <div>
+                        <h3>Transact</h3>
+                        <p>Send or receive payments effortlessly.</p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <figure>
+                        <img
+                          src="./assets/workflow/optimize.svg"
+                          alt="optimize"
+                        />
+                      </figure>
+                      <div>
+                        <h3>Optimize</h3>
+                        <p>Use our tools to improve financial decisions.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-6 col-lg-12"></div>
           </div>
         </div>
+      </section>
+
+      <section class="why-choose-us">
+        <div class="radial-blur"></div>
+        <!-- <div class="grid"></div> -->
+        <div class="container">
+          <div class="section-content">
+            <p class="section-badge">Why Choose Us</p>
+            <h2 class="sec-heading">
+              Why Choose Our <span>Budget Planner?</span>
+            </h2>
+          </div>
+
+          <div class="buddget-planner-wrapper row">
+            <div class="buddget-planner-left col-6">
+              <figure>
+                <img
+                  src="./assets/why-choose-us/girl-holding-pen.svg"
+                  alt="girl holding pen"
+                />
+              </figure>
+            </div>
+            <div class="buddget-planner-right col-6">
+              <div class="feature-step">
+                <figure>
+                  <img
+                    src="./assets/why-choose-us/laptop-mobile.svg"
+                    alt="laptop-mobile"
+                  />
+                </figure>
+                <div class="feature-content">
+                  <h3>Easy to Use</h3>
+                  <p>Clean, minimalist interface designed for everyone.</p>
+                </div>
+              </div>
+              <div class="feature-step">
+                <figure>
+                  <img
+                    src="./assets/why-choose-us/object-subtract.svg"
+                    alt="object-subtract"
+                  />
+                </figure>
+                <div class="feature-content">
+                  <h3>Fully Customizable</h3>
+                  <p>Create unlimited budgets and categories.</p>
+                </div>
+              </div>
+              <div class="feature-step">
+                <figure>
+                  <img
+                    src="./assets/why-choose-us/money-bill-wheat.svg"
+                    alt="money-bill-wheat"
+                  />
+                </figure>
+                <div class="feature-content">
+                  <h3>Real-Time Updates</h3>
+                  <p>Stay on top of your finances instantly.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-btn">
+            <a href="#" class="btn btn-primary">Explore More</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-sec">
+        <div class="container">
+          <div class="section-content">
+            <p class="section-badge test-badge">Testimonials</p>
+            <h2 class="sec-heading test-head">What our users say</h2>
+            <p class="sec-description test-desc">
+              Users love our app for tracking expenses, saving smarter, and
+              enjoying secure tools, personalized insights, and rewarding
+              financial management
+            </p>
+          </div>
+          <div class="swiper testimonialSwiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide testimonial-card">
+                <div class="info">
+                  <div class="profile">
+                    <img src="./assets/slider/dp-1.png" alt="" />
+                  </div>
+                  <div>
+                    <h3 class="name">Rohit Mishra</h3>
+                    <p class="location">— Mumbai, India</p>
+                  </div>
+                </div>
+
+                <div class="stars">
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-2.png" alt="" />
+                  </div>
+                </div>
+
+                <p class="slider-para">
+                  “Managing my monthly budget has never been simple. The
+                  dashboard gives me instant clarity on where my money is
+                  going.”
+                </p>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="swiper-slide testimonial-card">
+                <div class="info">
+                  <div class="profile">
+                    <img src="./assets/slider/dp-2.png" alt="" />
+                  </div>
+                  <div>
+                    <h3 class="name">Daniel Collins</h3>
+                    <p class="location">— Berlin, Germany</p>
+                  </div>
+                </div>
+
+                <div class="stars">
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-2.png" alt="" />
+                  </div>
+                </div>
+
+                <p class="slider-para">
+                  “This tool helped me cut unnecessary expenses and save more
+                  every month. The charts are super easy to understand.”
+                </p>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="swiper-slide testimonial-card">
+                <div class="info">
+                  <div class="profile">
+                    <img src="./assets/slider/dp-3.png" alt="" />
+                  </div>
+                  <div>
+                    <h3 class="name">Aditi Ghosh</h3>
+                    <p class="location">— Kolkata, India</p>
+                  </div>
+                </div>
+
+                <div class="stars">
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-2.png" alt="" />
+                  </div>
+                </div>
+
+                <p class="slider-para">
+                  “As a student, budgeting used to be stressful. This planner
+                  made it effortless and even fun to track every rupee.”
+                </p>
+              </div>
+              <!-- Slide 4 -->
+              <div class="swiper-slide testimonial-card">
+                <div class="info">
+                  <div class="profile">
+                    <img src="./assets/slider/dp-1.png" alt="" />
+                  </div>
+                  <div>
+                    <h3 class="name">Rohit Mishra</h3>
+                    <p class="location">— Mumbai, India</p>
+                  </div>
+                </div>
+
+                <div class="stars">
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-2.png" alt="" />
+                  </div>
+                </div>
+
+                <p class="slider-para">
+                  “Managing my monthly budget has never been simple. The
+                  dashboard gives me instant clarity on where my money is
+                  going.”
+                </p>
+              </div>
+              <!-- slide-5 -->
+              <div class="swiper-slide testimonial-card">
+                <div class="info">
+                  <div class="profile">
+                    <img src="./assets/slider/dp-2.png" alt="" />
+                  </div>
+                  <div>
+                    <h3 class="name">Daniel Collins</h3>
+                    <p class="location">— Berlin, Germany</p>
+                  </div>
+                </div>
+                <div class="stars">
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-1.png" alt="" />
+                  </div>
+                  <div class="star">
+                    <img src="./assets/slider/star-2.png" alt="" />
+                  </div>
+                </div>
+
+                <p class="slider-para">
+                  “This tool helped me cut unnecessary expenses and save more
+                  every month. The charts are super easy to understand.”
+                </p>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <!-- footer-section -->
+    <footer>
+      <!-- <div class="grid"></div> -->
+      <div class="container">
+        <div class="footer-top">
+          <div class="row">
+            <div class="col col-4 col-xl-3 col-lg-12 col-sm-12">
+              <div class="footer-content">
+                <div class="footer-logo">
+                  <a href="#"
+                    ><img src="./assets/navbar/logo.svg" alt="Fin Pocket"
+                  /></a>
+                </div>
+                <p class="footer-text">
+                  Take Control of Your Financial Journey
+                </p>
+                <form class="newsletter-form">
+                  <input type="email" placeholder="Enter your email" />
+                  <input type="submit" value="Subscribe" />
+                </form>
+              </div>
+            </div>
+
+            <div class="col col-1-5 col-xl-2 col-lg-6 col-sm-12">
+              <div class="footer-content">
+                <ul>
+                  <li class="footer-heading">Company</li>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Features</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">FAQ</a></li>
+                  <li><a href="">Pricing</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col col-2 col-xl-2 col-lg-6 col-sm-12">
+              <div class="footer-content">
+                <ul>
+                  <li class="footer-heading">Services</li>
+                  <li><a href="">CVP</a></li>
+                  <li><a href="">Budget planning</a></li>
+                  <li><a href="">Expense tracking</a></li>
+                  <li><a href="">Trust</a></li>
+                  <li><a href="">Profit</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col col-1-5 col-xl-2 col-lg-6 col-sm-12">
+              <div class="footer-content">
+                <ul>
+                  <li class="footer-heading">Support</li>
+                  <li><a href="">Testimonials</a></li>
+                  <li><a href="">Contact Us</a></li>
+                  <li><a href="">Notification</a></li>
+                  <li><a href="">Technical Help</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col col-3 col-xl-3 col-lg-6 col-sm-12">
+              <div class="footer-content">
+                <ul>
+                  <li class="footer-heading">Contact</li>
+                  <li><a href="">Email: support@finpocket.com</a></li>
+                  <li><a href="">Phone: +1 (800) 456-7890</a></li>
+                  <li>
+                    <div class="socials">
+                      <a href="#"
+                        ><img
+                          src="./assets/social-logo/facebook.svg"
+                          alt="facebook"
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="./assets/social-logo/twitter.svg"
+                          alt="twitter"
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="./assets/social-logo/instagram.svg"
+                          alt="instagram"
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="./assets/social-logo/youtube.svg"
+                          alt="youtube"
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="./assets/social-logo/linkedin.svg"
+                          alt="linkedin"
+                      /></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <p>© Copyright 2025. All rights reserved.</p>
+          </div>
+          <ul class="footer-bottom-right">
+            <li><a href="#">Terms & Conditions.</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
       </div>
-    </section>
+    </footer>
+
+    <!-- Swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/clients.js"></script>
+    <script src="./js/accordian.js"></script>
+    <script src="./js/goal.js"></script>
+    <script src="./js/pricing.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/contact.js"></script>
   </body>
 </html>

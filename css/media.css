@@ -11,9 +11,6 @@
   .expenses-table table {
     min-width: 900px; /* prevents column squish */
   }
-  .banner-img {
-    width: 460px;
-  }
 }
 @media (max-width: 1024px) {
   .features-grid {
