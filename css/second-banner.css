@@ -508,11 +508,13 @@ h3 {
   }
 }
 .banner-sec {
-  min-height: 100vh;
+  min-height: 700px !important;
   position: relative;
-  /* background: var(--clr-primary-900); */
   overflow: hidden;
   padding: 150px 0;
+}
+.sub-banner{
+  color: var(--clr-primary-200);
 }
 .banner-heading {
   max-width: 647px;
@@ -522,12 +524,12 @@ h3 {
   margin-bottom: 65px;
   font-family: var(--ff-stolzl);
 }
-.banner-para {
-  font-size: 18px;
-  font-weight: 400;
-  font-family: var(--ff-dm-sans);
+.home,
+.contact{
   color: var(--clr-accent-100);
-  max-width: 536px;
+  font-size: 18px;
+  font-weight: var(--fw-regular);
+  font-family: var(--ff-dm-sans);
 }
 .banner-cntn {
   position: absolute;
