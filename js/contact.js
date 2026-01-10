@@ -1,9 +1,11 @@
-function openMap(){
-  document.getElementById("mapModal").style.display = "block";
-  document.body.style.overflow = "hidden";
-}
+const mapTrigger = document.getElementById("mapTrigger");
+const mapPopup = document.getElementById("mapPopup");
+const closeMap = document.getElementById("closeMap");
 
-function closeMap(){
-  document.getElementById("mapModal").style.display = "none";
-  document.body.style.overflow = "auto";
-}
+mapTrigger.addEventListener("click", () => {
+  mapPopup.style.display = "flex";
+});
+
+closeMap.addEventListener("click", () => {
+  mapPopup.style.display = "none";
+});
