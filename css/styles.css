@@ -251,6 +251,12 @@ main{
 /* SAVINGS */
 .savings {
   grid-column: 1 / -1;
+  position: relative;
+}
+.spending-img{
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .savings-grid {
