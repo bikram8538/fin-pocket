@@ -85,7 +85,11 @@
   margin-right: 50px;
 }
 .banner-image {
-  z-index: 998;
+  z-index: 4;
+}
+.banner-image figure{
+  max-width: 1260px;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
