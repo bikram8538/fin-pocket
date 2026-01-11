@@ -1,6 +1,5 @@
 .banner-sec {
   min-height: 700px !important;
-  position: relative;
   overflow: hidden;
   padding-top: 120px;
   padding-bottom: 60px;
@@ -45,8 +44,6 @@
   }
 
   .banner-cntn {
-    position: relative;
-    top: 28px;
     margin-bottom: 40px;
   }
 }
