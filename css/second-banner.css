@@ -26,8 +26,26 @@
   margin-bottom: 65px;
   font-family: var(--ff-stolzl);
 }
-.home,
-.contact {
+.switch-link{
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.switch-link li{
+  position: relative;
+  margin-right: 21px;
+  background: blue;
+}
+.switch-link li::before:not(:first-child){
+  content: '>';
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  left: -14px;
+  transform: translateY(-50%);
+  color: var(--clr-primary-100);
+}
+.switch-link a{
   color: var(--clr-accent-100);
   font-size: var(--fs-400);
   font-weight: var(--fw-regular);
