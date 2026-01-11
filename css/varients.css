@@ -161,6 +161,7 @@ input[type="number"] {
   font-size: var(--fs-300);
   font-weight: var(--fw-regular);
   transition: all 0.3s ease-in;
+  cursor: pointer;
 }
 .btn-primary {
   background: var(--clr-primary-200);
