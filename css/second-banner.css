@@ -29,27 +29,30 @@
 .switch-link{
   display: flex;
   justify-content: flex-start;
-  align-items: baseline;
+  align-items: center;
 }
 .switch-link li{
   position: relative;
   margin-right: 21px;
-  background: blue;
+  transition: 0.3s ease;
 }
-.switch-link li::before:not(:first-child){
+.switch-link li:not(:first-child):before{
   content: '>';
   position: absolute;
   top: 50%;
-  font-size: 18px;
-  left: -14px;
+  font-size: 25px;
+  left: -16px;
   transform: translateY(-50%);
   color: var(--clr-primary-100);
 }
 .switch-link a{
-  color: var(--clr-accent-100);
+  color: var(--clr-primary-100);
   font-size: var(--fs-400);
   font-weight: var(--fw-regular);
   font-family: var(--ff-dm-sans);
+}
+.switch-link li:hover a{
+  color: var(--clr-primary-200);
 }
 
 /* Media-Query */
