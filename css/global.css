@@ -370,7 +370,9 @@ h3 {
   .btn {
     padding: 12px 20px;
   }
-
+  section{
+    padding: 40px 0 !important;
+  }
   .col-lg-1 {
     width: calc(var(--one-col) * 1);
   }

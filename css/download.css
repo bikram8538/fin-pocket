@@ -428,9 +428,7 @@
     text-align: center;
   }
   /* FAQ-Section */
-  .faq-sec {
-    padding: 37px 0 46px;
-  }
+  
   .faq-cntn > h4 {
     font-size: 28px;
     font-weight: 400;
@@ -446,6 +444,7 @@
   .testimonialSwiper {
     padding-bottom: 50px;
   }
+  
 }
 @media (max-width: 576px) {
   /* Download-sec */

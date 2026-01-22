@@ -664,12 +664,14 @@ main{
 }
 
 /* ===== Service Section === */
-.section-content {
+service .section-content {
   max-width: 827px;
   margin: 0 auto;
+  background: red;
 }
-.section-content p {
-  margin: 50px auto;
+services .section-content p {
+  margin: 40px auto;
+  /* background: red; */
 }
 
 .service-card-wrapper {
