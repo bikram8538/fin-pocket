@@ -2,7 +2,7 @@
 /* ============== Footer start */
 
 footer {
-  padding: 60px 0;
+  padding-top: 60px;
   font-family: var(--ff-dm-sans);
   position: relative;
   overflow: hidden;
@@ -194,7 +194,7 @@ footer ul li:hover a {
 @media screen and (max-width: 991px) {
   .footer-content{
     text-align: center;
-    margin: 16px 0;
+    margin-bottom: 16px;
   }
   .footer-content > * {
     width: fit-content;
@@ -203,5 +203,8 @@ footer ul li:hover a {
   }
   .footer-top .row .col:first-child .footer-content > form{
     width: 100%;
+  }
+  footer{
+    padding-top: 40px;
   }
 }
