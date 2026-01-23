@@ -48,10 +48,12 @@
   font-weight: 400;
   letter-spacing: var(--letter-spacing-300);
   margin-bottom: 15px;
+  color: var(--clr-primary-100);
 }
 .contact-subtitle {
   font-family: var(--ff-dm-sans);
   font-size: var(--fs-300);
+  color: var(--clr-primary-100);
 }
 .cnt-form-body {
   margin-top: var(--fs-450);

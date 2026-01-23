@@ -154,6 +154,9 @@ input[type="number"] {
 }
 
 .btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   padding: 15px 20.5px;
   border-radius: 50px;
   border: 1px solid transparent;
