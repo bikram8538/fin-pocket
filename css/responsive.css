@@ -187,8 +187,25 @@
   .client-band-wrapper{
     bottom: -50px;
   }
+  .live-chat-content{
+    text-align: center;
+  }
+  .live-chat-btn{
+    flex-direction: column;
+    align-items: center;
+  }
+  .live-chat-btn figure{
+    margin-bottom: 24px;
+  }
+  .about-left > div:nth-child(2){
+    max-width: 330px;
+    width: 100%;
+  }
+  .about-left{
+    padding-top: 20%;
+  }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 420px) {
   .buddget-planner-right figure {
     padding: 20px 24px;
     border-radius: 25px;
@@ -197,9 +214,22 @@
     width: 30px;
     height: 30px;
   }
+  .about-left{
+    padding-top: 0%;
+    margin-top: 24px;
+  }
+  .about-left figure{
+    display: none;
+  }
+  .about-left > div{
+    position: relative;
+  }
+  .about-left > div:nth-child(2){
+    margin-bottom: 24px;
+  }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 375px) {
   :root {
     --fs-900: 30px;
     --fs-500: 24px;

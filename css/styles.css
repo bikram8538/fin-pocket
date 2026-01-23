@@ -1201,9 +1201,9 @@ td {
   margin-top: 50px;
   width: fit-content;
 }
-.about-left > figure {
+/* .about-left > figure {
   min-height: 800px;
-}
+} */
 .about-left > div {
   position: absolute;
 }
