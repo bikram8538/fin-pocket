@@ -203,6 +203,7 @@
   }
   .about-left{
     padding-top: 20%;
+    margin-top: 0;
   }
   .feature-step figure{
     width: 80px;
