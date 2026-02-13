@@ -3,7 +3,7 @@
   position: relative;
   background: var(--clr-primary-900);
   overflow: hidden;
-  padding-top: 150px !important;
+  padding: 150px 0 !important;
 }
 
 .banner::before,

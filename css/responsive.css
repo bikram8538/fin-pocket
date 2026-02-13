@@ -67,9 +67,6 @@
   .contact-form{
     margin-top: 40px;
   }
-  .workflow-steps{
-    margin-top: 30px;
-  }
 }
 @media screen and (max-width: 768px) {
   .grid {
