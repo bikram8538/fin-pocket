@@ -815,9 +815,9 @@ services .section-content p {
 }
 
 /* ======== workflow start ======== */
-.workflow {
+/* .workflow {
   background: var(--clr-primary-fade-900) !important;
-}
+} */
 
 .workflow-content {
   max-width: 827px;
@@ -827,22 +827,17 @@ services .section-content p {
   width: 100%;
 }
 .workflow-content .section-badge {
-  border-color: var(--clr-primary-900);
-  color: var(--clr-primary-900);
-  box-shadow: none;
-  border-width: 1px;
-  backdrop-filter: none;
-  background: rgba(0, 0, 0, 0);
+  line-height: normal !important;
 }
 
 .workflow-content h2 {
   text-align: left;
   margin-top: 30px;
-  color: var(--clr-primary-900);
+  /* color: var(--clr-primary-900); */
   font-weight: var(--fw-regular);
 }
 .workflow-content h3 {
-  color: var(--clr-primary-900);
+  color: var(--clr-primary-100);
   font-weight: var(--fw-semibold);
 }
 .workflow-content p {
@@ -852,26 +847,26 @@ services .section-content p {
   font-family: var(--ff-dm-sans);
   line-height: var(--lh-base);
   margin-top: 30px;
+  color: var(--clr-primary-100);
 }
 .workflow-content div:nth-child(n + 2) {
   margin-top: 32px;
 }
 /* =========== workflow-cards start =========== */
 .workflow-steps {
-  margin-top: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
 .steps-cards {
-  background: var(--clr-primary-100);
+  /* background: var(--clr-primary-100);
   backdrop-filter: blur(18px) saturate(180%);
   -webkit-backdrop-filter: blur(18px) saturate(180%);
 
   box-shadow: 0 4px 42px var(--clr-fade-250),
     inset 0 0 0.8px rgba(255, 255, 255, 0.5),
-    inset 0 0 20px rgba(255, 255, 255, 0.15);
+    inset 0 0 20px rgba(255, 255, 255, 0.15); */
 
   border-radius: 20px;
   display: flex;
@@ -903,7 +898,7 @@ services .section-content p {
 }
 .steps-cards figure {
   padding: 25px;
-  background: var(--clr-primary-900);
+  background: var(--clr-primary-100);
   border-radius: 50%;
   margin-right: 24px;
 }
