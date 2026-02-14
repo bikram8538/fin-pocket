@@ -208,7 +208,7 @@ main{
 .client-band-wrapper {
   position: absolute;
   left: 50%;
-  bottom: -70px;
+  bottom: -150px;
   transform: translateX(-50%);
   width: 120vw; /* wider for angled look */
   z-index: 4;
