@@ -67,6 +67,7 @@ assets-export/
 # -----------------------------
 *.bak
 *.backup
+.bat
 
 # -----------------------------
 # Mac Finder Metadata
