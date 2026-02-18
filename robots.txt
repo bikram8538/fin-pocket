@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /login.html
+Disallow: /signup.html
+Disallow: /forgot-password.html
+
+Sitemap: https://bikram8538.github.io/fin-pocket/sitemap.xml
